@@ -1,0 +1,1695 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Presentazioni su bitcoin, blockchain e criptovalute - F.Sarracco
+	</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/tagomi.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section class="center">
+				<h2>K2 - Learning Friday</h2>
+				<h1>Blockchain "Building Blocks"</h1>
+				<h3>29 marzo 2019</h3>
+				<br/>
+				<div class="title-footer">
+					<img title="Licenza d'uso" src="assets/images/cc-by.png" style="border:0px; max-width: 100px; margin-bottom: 0px;" />
+					<br />
+					&copy; 2019 - Fabiano Sarracco
+					<br />
+					<a href="https://www.linkedin.com/in/fabiano-sarracco-5a8b453/"><i class="ti-linkedin-square" style="vertical-align: sub"></i></a>
+					- <a href="https://twitter.com/fadjano"><i class="ti-twitter-square" style="vertical-align: sub;"></i>@fadjano</a>
+
+				</div>
+			</section>
+
+			<section>
+				<h3>AMA</h3>
+				<a data-nosymbol href="https://t.me/k2lf_blockchain">
+					<img src="assets/images/qr-telegram-k2lf.png">
+					<br/>
+					<i class="ti-telegram-square"></i> https://t.me/k2lf_blockchain
+				</a>
+			</section>
+
+			<section id="sec-blockchain" data-transition="fade-in fade-out" class="center">
+				<div id="background-image">
+					<img src="assets/images/blockchain-background.jpg">
+				</div>
+				<h2>Blockchain</h2>
+				</textarea>
+			</section>
+			
+			<section id="sli-bcnws">
+				<section>
+					<a data-nosymbol href="https://www.ft.com/content/6c707162-ffb1-11e7-9650-9c0ad2d7c5b5">
+						<img src="assets/images/news-blockchain-ft.png"/>
+					</a>
+				</section>
+				<section data-transition="slide" >
+					<a data-nosymbol href="https://www.wired.it/scienza/lab/2018/03/26/futuro-blockchain/">
+						<img src="assets/images/news-blockchain-wired.png"/>
+					</a>
+				</section>
+				<section data-transition="slide" >
+					<a data-nosymbol href="https://www.economist.com/technology-quarterly/2018/09/01/the-promise-of-the-blockchain-technology">
+						<img src="assets/images/news-blockchain-economist.png"/>
+					</a>
+				</section>
+				<!-- <section>
+					<a data-nosymbol href="https://www.nytimes.com/2018/12/04/opinion/blockchain-bitcoin-technology-revolution.html">
+						<img src="assets/images/news-blockchain-nyt.png"/>
+					</a>
+				</section> -->
+				<section data-transition="slide" >
+					<a href="https://www.cnbc.com/2019/01/23/bitcoin-price-going-to-zero-davos-future-of-blockchain-tech-.html">
+						<img src="assets/images/news-blockchain-cnbc.png"/>
+					</a>
+				</section>
+				<section data-transition="slide" >
+					<a href="https://it.cointelegraph.com/news/crypto-critic-nouriel-roubini-blockchain-is-no-better-than-an-excel-spreadsheet">
+						<img src="assets/images/news-blockchain-roubini.png"/>
+					</a>
+				</section>
+				<section data-transition="slide" >
+					<a href="https://www.smartinsights.com/managing-digital-marketing/managing-marketing-technology/gartner-hype-cycle-2018-most-emerging-technologies-are-5-10-years-away/">
+						<img src="assets/images/gartner-hype-cycle-for-emerging-tech-2018.png"/>
+					</a>
+				</section>
+				<section data-transition="slide" >
+					<a href="https://www.computerworld.com/article/3331678/blockchain/blockchain-craze-helps-push-up-related-salaries.html">
+						<img src="assets/images/news-blockchain-computerworld.png"/>
+					</a>
+				</section>
+			</section>
+			
+			<section id="sli-bchdf">
+				<h3>Cos'è una blockchain?</h3>
+				<card>
+					<div style="display:grid;grid-template-columns:1fr 4fr">
+						<div>
+							<img src="assets/images/logo-wikipedia.png">
+						</div>
+						<div>
+							Struttura dati <b>condivisa</b> e <b>immutabile</b>
+							definita come un <b>registro</b> digitale le cui voci sono raggruppate in "pagine"
+							(dette <b>blocchi</b>), concatenate in ordine cronologico, 
+							e la cui integrità è garantita dall'uso di <b>primitive crittografiche</b>
+					  
+						</div>
+					</div>
+				</card>
+				<div style="position: absolute;bottom: -35%;left: 0%; width: 50%;z-index: 500;" class="fragment fade-in">
+					<img style="border: 0;width: 80%; height: 80%; box-shadow: none; background: none;" src="assets/images/nche-senso.jpg">
+				</div>
+				<div style="position: absolute;bottom: -30%;left: 60%;" class="fragment zoom-in">
+					<a data-nosymbol href="./bitcoin.html#/sec-bitcoin"><img style="height: 3.5em;border-radius: 20px;" src="assets/images/logo-bitcoin.png"></a>
+				</div>
+			</section>
+
+			<section id="sec-bitcoin" class="center" data-transition="fade-in fade-out">
+				<div id="background-image">
+					<img src="assets/images/bitcoin-background.jpg">
+				</div>
+				<h2>Bitcoin</h2>
+			</section>
+			
+			<section id="sli-btcwp" >
+				<div>
+					<img style="border: 0" src="assets/images/bitcoin-whitepaper-cover.png">
+				</div>
+				<h4 class="tag" style="transform: rotateZ(-25deg);">
+					31 Ottobre 2008
+				</h4>
+				<div style="position: absolute; top: 25%;"
+					 class="fragment fade-in">
+					<img style=" -webkit-box-shadow: 10px 10px 32px 1px rgba(0,0,0,0.8);-moz-box-shadow: 10px 10px 32px 1px rgba(0,0,0,0.8);box-shadow: 10px 10px 32px 1px rgba(0,0,0,0.8);" 
+					src="assets/images/bitcoin-whitepaper-highlight.png">
+				</div>
+				<aside class="notes">
+					<p>Nel paper di Satoshi la parola <b>blockchain</b> non viene <b>mai</b> menzionata</p>
+				</aside>
+			</section>
+			
+			<section id="sli-cyphp">
+				<div id="background-image">
+					<img src="assets/images/cypherpunk-manifesto.jpg">
+				</div>
+				<h3>Cypherpunk</h3>
+				<div style="margin-left: -40px; display: grid; grid-template-columns: auto auto auto auto; grid-template-rows: auto;">
+					<a data-animate="zoomIn" data-nosymbol href="https://en.wikipedia.org/wiki/DigiCash">
+						<div class="vcard">
+							<div class="header">
+								Digicash
+							</div>
+							<div class="content">
+								<img src="assets/images/david-chaum.jpg">
+							</div>
+							<div class="footer">
+								1989 - David Chaum
+							</div>
+						</div>
+					</a>
+					<a data-animate="zoomIn" data-delay="0.4" data-nosymbol href="https://coincentral.com/what-is-bit-gold-the-brainchild-of-blockchain-pioneer-nick-szabo/">
+						<div class="vcard">
+							<div class="header">
+								Bit Gold
+							</div>
+							<div class="content">
+								<img src="assets/images/nick-szabo.png">
+							</div>
+							<div class="footer">
+								1998 - Nick Szabo
+							</div>
+						</div>
+					</a>
+					<a data-animate="zoomIn" data-delay="0.8"  data-nosymbol href="https://en.bitcoin.it/wiki/B-money">
+						<div class="vcard">
+							<div class="header">
+								B-Money
+							</div>
+							<div class="content">
+								<img src="assets/images/wei-dai.jpg">
+							</div>
+							<div class="footer">
+								1998 - Wei Dai
+							</div>
+						</div>
+					</a>
+					<a data-animate="zoomIn" data-delay="1.2"  data-nosymbol href="https://nakamotoinstitute.org/finney/rpow/">
+						<div class="vcard">
+							<div class="header">
+								RPOW
+							</div>
+							<div class="content">
+								<img src="assets/images/hal-finney.jpg">
+							</div>
+							<div class="footer">
+								2004 - Hal Finney
+							</div>
+						</div>
+					</a>
+				</div>
+				<aside class="notes">
+					<p>Cypherpunks manifesto (Eric Hughes, 1993)</p>
+					<p>RPOW è stato il primo ad essere implementato come software funzionante.</p>
+				</aside>
+				<div class="fragment blurred-background" style="position: absolute; top: 40%; left: 7%; right: -8%;">
+					<hcard data-left-icon="ti-question">
+						Come scambiare valore fra 2 o più parti che non si fidano fra loro e senza una terza parte fidata?
+					</hcard>
+				</div>
+			</section>
+			
+			<section class="center">
+				<h2>Una storia ...</h2>
+			</section>
+			
+			<section id="sli-puffi" data-background-image="assets/images/villaggio-puffi.png">
+				<div style="position:absolute; margin-top: 5%; left: 0%; width: 30%;" data-animate="jackInTheBox" data-delay="10">
+					<img style="width: 100%;border-radius: 20px;" src="assets/images/puffo-contadino.jpg">
+				</div>
+				<div style="position:absolute; margin-top: 5%; left: 25%; width: 30%" data-animate="jackInTheBox" data-delay="12">
+					<img style="width: 100%;border-radius: 20px;" src="assets/images/puffo-fabbro.jpg">
+				</div>
+				<div style="position:absolute; margin-top: 5%; left: 50%; width: 30%" data-animate="jackInTheBox" data-delay="14">
+					<img style="width: 100%;border-radius: 20px;" src="assets/images/puffo-falegname.jpg">
+				</div>
+				<div style="position:absolute; margin-top: 5%; left: 75%; width: 30%" data-animate="jackInTheBox" data-delay="16">
+					<img style="width: 100%;border-radius: 20px;" src="assets/images/puffo-pasticcere.jpg">
+				</div>
+				<div style="position:absolute; margin-top: 30%; left: 30%; width: 30%" data-animate="jackInTheBox" data-delay="23">
+					<img style="width: 100%;border-radius: 20px;" src="assets/images/puffetta.jpg">
+				</div>
+				<div style="position:absolute; margin-top: 30%; left: 60%; width: 30%" data-animate="jackInTheBox" data-delay="25">
+						<img style="width: 100%;border-radius: 20px;" src="assets/images/puffo-pigrone.png">
+				</div>
+			</section>
+			
+			<!-- Il baratto -->
+			<section id="sli-barat">
+				<h3>Il baratto</h3>
+				<div style="display: grid; grid-template-columns: 1fr 2fr">
+					<div>
+						<img style="background: none; box-shadow: none" src="assets/images/puffo-pittore.png">
+					</div>
+					<div>
+						<div class="card">Ti do' una cosa mia in cambio di un'altra di cui ho bisogno</div>
+						<div class="fragment" data-fragment-index="1">
+						<div class="card header">Requisiti</div>
+						<list-item data-value="1">Bisogni reciproci fra le parti</list-item>
+						<list-item data-value="2">Valori equivalenti o beni divisibili</list-item>
+						</div>
+						<div class="fragment" data-fragment-index="2">
+							<div class="card header">Problemi</div>
+							<list-item data-item-icon="ti-dislike">Beni deperibili</list-item>
+							<list-item data-item-icon="ti-dislike">Difficile il risparmio</list-item>
+						</div>
+					</div>
+				</div>
+				<div style="position:absolute; top:30%; left:26%;width:65%;border:1;z-index:100;" 
+					class="fragment blurred-background" data-fragment-index="3">
+					<hcard class="shadowed" data-left-icon="ti-genie-lamp">
+						<p><b>Non deperibilità</b></p>
+						<p><b>Divisibilità</b></p>
+						<p><b>Disponibilità</b></p>
+						<p><b>Verificabilità</b></p>
+					</hcard>
+				</div>
+			</section>
+			
+			<!-- La puffo-moneta -->
+			<section id="sli-money">
+				<h3>La puffo-moneta</h3>
+				<div style="display: grid; grid-template-columns: 1fr 2fr">
+					<div>
+						<img data-animate="zoomIn" style="background: none; box-shadow: none" src="assets/images/smurf-coin.png">
+					</div>
+					<div>
+						<div class="fragment">
+							<list-header>Funzioni della moneta</list-header>
+							<list-item data-value="1" class="fragment">strumento di pagamento</list-item>
+							<list-item data-value="2" class="fragment">unità di conto</list-item>
+							<list-item data-value="3" class="fragment">riserva di valore</list-item>
+						</div>
+					</div>
+				</div>
+				<div style="position: absolute;top:30%;left:20%;z-index:500" class="fragment fade-down">
+					<img style="background: none;box-shadow: none" src="assets/images/sacchetto-monete.png">
+				</div>
+			</section>
+			
+			<!-- La puffo-nota -->
+			<section id="sli-bankn">
+				<h3>La puffo-nota</h3>
+				<img style="max-height: 10em" data-animate="rubberBand" src="assets/images/smurf-banknote.jpg">
+				<card>Biglietto cartaceo che costituisce un <b>titolo</b> rappresentativo di un corrispondente <b>deposito</b> monetario</card>
+				<aside class="notes">
+					<p>Quella descritta è in realtà un tipo specifico di banconota, ovvero la <b>moneta cartacea rappresentativa</b>.</p>
+					<p><b>moneta cartacea fiduciaria</b>, il cui valore dipende dal fatto che una banca garantisce la convertibilità
+						in metallo prezioso, nonostante abbia emesso una quantità di moneta cartacea superiore rispetto alle sue
+						effettive capacità di copertura (facendo affidamento sull'utilizzo diretto della moneta cartacea come
+						circolante, che dipende dalla fiducia dei depositanti - e di chi riceve moneta cartacea in pagamento - 
+						relativamente alla capacità della banca stessa di far fronte a eventuali richieste di conversione in metallo prezioso);</p>
+					<p><b>moneta cartacea convenzionale</b>, il cui valore è totalmente svincolato dalla presenza di metalli
+						preziosi a copertura, ed è garantito fondamentalmente dal fatto di essere riconosciuta come moneta a corso
+						legale in un determinato stato (nei sistemi monetari attuali, totalmente svincolati dai metalli preziosi,
+						la banconota appartiene a tale categoria).</p>
+				</aside>
+			</section>
+			
+			<!-- Il puffo-registro -->
+			<section id="sli-ledg1">
+				<h3>Il puffo-registro (ledger)</h3>
+				<img style="position:absolute;top: 12%;left: 0%;width: 100%;height: 100%;max-width: none;max-height: none;" 
+					class="fragment fade-out" data-fragment-index="0"
+					 src="assets/images/old-ledger.jpg">
+				<div style="background-image: url('assets/images/old-paper.png');font-family: 'Allura', cursive;color: rgb(0,0,20);">
+					<table>
+						<tr class="fragment" data-fragment-index="1">
+							<td>1.</td>
+							<td>1/1/2019</td>
+							<td>
+								Puffo A <span style="color:red;">deposita</span> <span style="color:darkblue">1000 PM</span>
+							</td>
+						</tr>
+						<tr class="fragment" data-fragment-index="2">
+							<td>2.</td>
+							<td>2/1/2019</td>
+							<td>
+								Puffo B <span style="color:red;">deposita</span> <span style="color:darkblue">500 PM</span></td>
+						</tr>
+						<tr class="fragment" data-fragment-index="3">
+							<td>3.</td>
+							<td>4/1/2019</td>
+							<td>Puffo A <span style="color:red;">preleva</span> <span style="color:darkblue">500 PM</span></td>
+						</tr>
+						<tr class="fragment" data-fragment-index="4">
+							<td>4.</td>
+							<td>4/1/2019</td>
+							<td>Puffo B <span style="color:red;">trasferice</span> <span style="color:darkblue">400 PM</span> a Puffo A</td>
+						</tr>
+						<tr class="fragment" data-fragment-index="5">
+							<td>5.</td>
+							<td>5/1/2019</td>
+							<td>Puffo C <span style="color:red;">deposita</span> <span style="color:darkblue">2500 PM</span></td>
+						</tr>
+						<tr class="fragment" data-fragment-index="6">
+							<td>6.</td>
+							<td>5/1/2019</td>
+							<td>Puffo C <span style="color:red;">trasferisce</span> <span style="color:darkblue">150 PM</span> a Puffo B</td>
+						</tr>
+						<tr class="fragment" data-fragment-index="6">
+							<td>7.</td>
+							<td>...</td>
+							<td>...</td>
+						</tr>
+						</table>
+				</div>
+				<aside class="notes">
+					<p>Depositi e prelievi non sono altro che trasferimenti da e verso la banca.</p>
+				</aside>
+			</section>
+			
+			<!-- Un ledger centralizzato -->
+			<section id="sli-ledce">
+				<h3>Un ledger centralizzato</h3>
+				<svg id="svg-ledce" height="500" width="900">
+					<rect width="100%" height="100%" rx="15" ry="15" fill="rgba(240,240,240,0.6)"/>
+					<line x1="620" y1="320" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:4" />
+					<circle cx="620" cy="320" r="30" stroke="black" stroke-width="3" fill="white" />
+					<line x1="110" y1="110" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:4" />
+					<circle cx="110" cy="110" r="30" stroke="black" stroke-width="3" fill="white" />
+					<line x1="130" y1="320" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:4" />
+					<circle cx="130" cy="320" r="30" stroke="black" stroke-width="3" fill="white" />
+					<line x1="535" y1="420" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:4" />
+					<circle cx="535" cy="420" r="30" stroke="black" stroke-width="3" fill="white" />
+					<line x1="700" y1="185" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:4" />
+					<circle cx="700" cy="185" r="30" stroke="black" stroke-width="3" fill="white" />
+					<line x1="810" y1="300" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:4" />
+					<circle cx="810" cy="300" r="30" stroke="black" stroke-width="3" fill="white" />
+					<line x1="310" y1="140" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:4" />
+					<circle cx="310" cy="140" r="30" stroke="black" stroke-width="3" fill="white" />
+					<line x1="720" y1="85" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:4" />
+					<circle cx="720" cy="85" r="30" stroke="black" stroke-width="3" fill="white" />
+					<line x1="450" y1="80" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:4" />
+					<circle cx="450" cy="80" r="30" stroke="black" stroke-width="3" fill="white" />
+					<line x1="320" y1="365" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:4" />
+					<circle cx="320" cy="365" r="30" stroke="black" stroke-width="3" fill="white" />
+					<line x1="530" y1="140" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:4" />
+					<circle cx="530" cy="140" r="30" stroke="black" stroke-width="3" fill="white" />
+					<line x1="180" y1="240" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:4" />
+					<circle cx="180" cy="240" r="30" stroke="black" stroke-width="3" fill="white" />
+					<line x1="430" y1="430" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:4" />
+					<circle cx="430" cy="430" r="30" stroke="black" stroke-width="3" fill="white" />
+					<line x1="630" y1="450" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:4" />
+					<circle cx="630" cy="450" r="30" stroke="black" stroke-width="3" fill="white" />
+					<!-- Grande puffo -->
+					<circle cx="450" cy="250" r="30" stroke="black" stroke-width="3" fill="red" />
+					<text x="435" y="265" style="font-size:90%; font-family: tagomi-icons">p</text>
+				</svg>
+				<div style="position:absolute;top: 25%; left:60%;" class="fragment fade-in">
+					<img style="background: none; box-shadow: none" src="assets/images/gargamella-cut.png">
+				</div>
+				<div style="position:absolute;top: 70%;left: 15%; width:80%" class="fragment fade-in">
+					<hcard data-left-icon="ti-exclamation-triangle">
+						<ul>
+						<li>Prestazioni</li>
+						<li>Sicurezza</li>
+						<li>Singolo <em>point-of-failure</em></li>
+						</ul>
+					</hcard>        
+				</div>
+			</section>
+			
+			<!-- Un ledger decentralizzato -->
+			<section id="sli-decle">
+				<h3>Un ledger decentralizzato</h3>
+			
+				<svg id="svg-ledde" height="500" width="900">
+					<rect width="100%" height="100%" rx="15" ry="15" fill="rgba(240,240,240,0.6)"/>
+			
+					<line x1="620" y1="320" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:4"  stroke-dasharray="4"/>
+					<line x1="620" y1="320" x2="535" y2="420" style="stroke:rgb(0,0,0);stroke-width:4" />
+					<circle cx="620" cy="320" r="30" stroke="black" stroke-width="3" fill="white" />
+			
+					<line x1="110" y1="110" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:4" stroke-dasharray="4" />
+					<line x1="110" y1="110" x2="180" y2="240" style="stroke:rgb(0,0,0);stroke-width:4" />
+					<circle cx="110" cy="110" r="30" stroke="black" stroke-width="3" fill="white" />
+			
+					<line x1="130" y1="320" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:4" stroke-dasharray="4" />
+					<line x1="130" y1="320" x2="180" y2="240" style="stroke:rgb(0,0,0);stroke-width:4" />
+					<circle cx="130" cy="320" r="30" stroke="black" stroke-width="3" fill="white" />
+			
+					<line x1="810" y1="300" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:4" stroke-dasharray="4"/>
+					<line x1="810" y1="300" x2="700" y2="185" style="stroke:rgb(0,0,0);stroke-width:4" />
+					<circle cx="810" cy="300" r="30" stroke="black" stroke-width="3" fill="white" />
+			
+					<line x1="310" y1="140" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:4" />
+					<circle cx="310" cy="140" r="30" stroke="black" stroke-width="3" fill="white" />
+			
+					<line x1="720" y1="85" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:4" stroke-dasharray="4"/>
+					<line x1="720" y1="85" x2="700" y2="185" style="stroke:rgb(0,0,0);stroke-width:4" />
+					<circle cx="720" cy="85" r="30" stroke="black" stroke-width="3" fill="white" />
+			
+					<line x1="450" y1="80" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:4" />
+					<circle cx="450" cy="80" r="30" stroke="black" stroke-width="3" fill="white" />
+			
+					<line x1="320" y1="365" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:4" stroke-dasharray="4"/>
+					<line x1="320" y1="365" x2="180" y2="240" style="stroke:rgb(0,0,0);stroke-width:4" />
+					<circle cx="320" cy="365" r="30" stroke="black" stroke-width="3" fill="white" />
+			
+					<line x1="530" y1="140" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:4" />
+					<circle cx="530" cy="140" r="30" stroke="black" stroke-width="3" fill="white" />
+			
+					<line x1="430" y1="430" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:4" stroke-dasharray="4"/>
+					<line x1="430" y1="430" x2="535" y2="420" style="stroke:rgb(0,0,0);stroke-width:4" />
+					<circle cx="430" cy="430" r="30" stroke="black" stroke-width="3" fill="white" />
+			
+					<line x1="630" y1="450" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:4"  stroke-dasharray="4"/>
+					<line x1="630" y1="450" x2="535" y2="420" style="stroke:rgb(0,0,0);stroke-width:4" />
+					<circle cx="630" cy="450" r="30" stroke="black" stroke-width="3" fill="white" />
+			
+					<line x1="180" y1="240" x2="450" y2="250" style="stroke:rgb(200,0,0);stroke-width:5" />
+					<circle cx="180" cy="240" r="30" stroke="black" stroke-width="3" fill="white" />
+					<line x1="700" y1="185" x2="450" y2="250" style="stroke:rgb(200,0,0);stroke-width:5" />
+					<circle cx="700" cy="185" r="30" stroke="black" stroke-width="3" fill="white" />
+					<line x1="535" y1="420" x2="450" y2="250" style="stroke:rgb(200,0,0);stroke-width:5" />
+					<circle cx="535" cy="420" r="30" stroke="black" stroke-width="3" fill="white" />
+					<!-- Grande puffo -->
+					<circle cx="450" cy="250" r="30" stroke="black" stroke-width="3" fill="red" />
+			
+					<text x="435" y="265" style="font-size:90%; font-family: tagomi-icons">p</text>
+					<text x="165" y="255" style="font-size:90%; font-family: tagomi-icons">p</text>
+					<text x="520" y="435" style="font-size:90%; font-family: tagomi-icons">p</text>
+					<text x="685" y="200" style="font-size:90%; font-family: tagomi-icons">p</text>
+				</svg>
+				
+				<aside class="notes">
+					<p>La centralizzazione in questo caso è nel controllo.</p>
+				</aside>
+			</section>
+			
+			<!-- Un ledger distribuito -->
+			<section id="sli-disle">
+				<h3>Un ledger distribuito</h3>
+			
+				<svg id="svg-leddi" height="500" width="900">
+					<rect width="100%" height="100%" rx="15" ry="15" fill="rgba(240,240,240,0.6)"/>
+			
+					<line x1="620" y1="320" x2="720" y2="85" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="620" y1="320" x2="630" y2="450" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="620" y1="320" x2="700" y2="185" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="620" y1="320" x2="535" y2="420" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="620" y1="320" x2="810" y2="300" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="620" y1="320" x2="530" y2="140" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="620" y1="320" x2="430" y2="430" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="620" y1="320" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="320" y1="365" x2="620" y2="320" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="180" y1="240" x2="110" y2="110" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="180" y1="240" x2="130" y2="320" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="180" y1="240" x2="310" y2="140" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="180" y1="240" x2="320" y2="365" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="180" y1="240" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="450" y1="80" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="450" y1="80" x2="110" y2="110" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="450" y1="80" x2="310" y2="140" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="450" y1="80" x2="530" y2="140" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="450" y1="80" x2="720" y2="85" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="320" y1="365" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="320" y1="365" x2="130" y2="320" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="320" y1="365" x2="430" y2="430" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="320" y1="365" x2="310" y2="140" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="430" y1="430" x2="535" y2="420" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="535" y1="420" x2="630" y2="450" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="630" y1="450" x2="810" y2="300" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="810" y1="300" x2="700" y2="185" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="720" y1="85" x2="700" y2="185" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="530" y1="140" x2="700" y2="185" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="720" y1="85" x2="810" y2="300" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="720" y1="85" x2="530" y2="140" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="310" y1="140" x2="530" y2="140" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="310" y1="140" x2="110" y2="110" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="130" y1="320" x2="110" y2="110" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="530" y1="140" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="310" y1="140" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:3" />
+			
+					<circle cx="620" cy="320" r="30" stroke="black" stroke-width="3" fill="white" />
+					<text x="605" y="335" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+			
+					<circle cx="180" cy="240" r="30" stroke="black" stroke-width="3" fill="white" />
+					<text x="165" y="255" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="450" cy="80" r="30" stroke="black" stroke-width="3" fill="white" />
+					<text x="435" y="95" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="320" cy="365" r="30" stroke="black" stroke-width="3" fill="white" />
+					<text x="305" y="380" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="110" cy="110" r="30" stroke="black" stroke-width="3" fill="white" />
+					<text x="95" y="125" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="130" cy="320" r="30" stroke="black" stroke-width="3" fill="white" />
+					<text x="115" y="335" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="810" cy="300" r="30" stroke="black" stroke-width="3" fill="white" />
+					<text x="795" y="315" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="310" cy="140" r="30" stroke="black" stroke-width="3" fill="white" />
+					<text x="295" y="155" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="720" cy="85" r="30" stroke="black" stroke-width="3" fill="white" />
+					<text x="705" y="100" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="530" cy="140" r="30" stroke="black" stroke-width="3" fill="white" />
+					<text x="515" y="155" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="430" cy="430" r="30" stroke="black" stroke-width="3" fill="white" />
+					<text x="415" y="445" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="630" cy="450" r="30" stroke="black" stroke-width="3" fill="white" />
+					<text x="615" y="465" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="700" cy="185" r="30" stroke="black" stroke-width="3" fill="white" />
+					<text x="685" y="200" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="535" cy="420" r="30" stroke="black" stroke-width="3" fill="white" />
+					<text x="520" y="435" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<!-- Grande puffo -->
+					<circle cx="450" cy="250" r="30" stroke="black" stroke-width="3" fill="red" />
+					<text x="435" y="265" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+				</svg>
+			</section>
+			<section data-background="./assets/images/identity-spoofing.gif">
+			</section>
+			
+			<!-- Crittografia e hash -->
+			<section>
+				<section id="sli-ascry">
+					<h3>Crittografia asimmetrica</h3>
+					<div>
+						<img style="max-height: 15em" src="assets/images/public-key-encryption.png">
+					</div>
+					<aside class="notes">
+						<p>Principi di sicurezza crittografica: Confidenzialita, Integrità, Disponibilità.</p>
+					</aside>
+				</section>
+			
+				<section data-transition="slide" id="sli-digsig">
+					<h3>Firma digitale</h3>
+					<div>
+						<img style="max-height: 15em" src="assets/images/digital-signature.png">
+					</div>
+				</section>
+			
+				<section data-transition="slide" id="sli-hashf">
+					<h3>Funzioni hash</h3>
+						<div>
+							<textarea style="width:100%;font-size: 0.8em;" id="hashinput" rows="6" oninput="recomputeHash();">Questo è un testo</textarea>
+						</div>
+						<div id="hashsymbol" style="padding-top: 0.6em; padding-bottom: 0.6em;font-size: 2em;">
+							<b>&darr; H(x)</b>
+						</div>
+						<div>
+							<div style="width: 100%;background: rgba(200,200,200,0.8);border-radius: 10px;font-family: 'Major Mono Display', monospace;">
+								<span id="hashoutput1">d438229c7d975cc8253ad7b92e86016a</span>
+								<span id="hashoutput2">eba49d4feb25cd252794d65ef770d98b</span>
+							</div>
+						</div>
+					<script>
+						function recomputeHash() {
+							document.getElementById('hashsymbol').style.color = "pink";
+							let input = document.getElementById('hashinput');
+							let output = SHA256(input.value);
+							document.getElementById('hashoutput1').innerHTML = output.substring(0, 32);
+							document.getElementById('hashoutput2').innerHTML = output.substring(32);
+							setTimeout(() => { document.getElementById('hashsymbol').style.color = "white"; }, 300);
+						}
+					</script>
+				</section>
+			
+				<section data-transition="slide" id="sli-hashp">
+					<h3>Proprietà hash crittografico</h3>
+					<list-item class="hidden" data-value="1">
+							Facile da calcolare (e deterministica)
+					</list-item>
+					<list-item class="hidden" data-value="2">
+							Output a lunghezza fissa
+					</list-item>
+					<list-item class="hidden" data-value="3">
+							Uniformemente distribuita / Dispersa
+					</list-item>
+					<list-item class="hidden" data-value="4">
+							<b>Pre-image resistance</b>
+					</list-item>
+					<list-item class="hidden" data-value="5">
+							<b>Second preimage resistance</b>
+					</list-item>
+					<list-item class="hidden" data-value="6">
+							<b>Collision resistance</b>
+					</list-item>
+			
+					<aside class="notes">
+						<p>1. Facile da calcolare (e deterministica)
+						<br/>2. Output a lunghezza fissa
+						<br/>3. Uniformemente distribuita  Dispersa (detta anche <b>effetto valanga</b>)
+						<br/>4. Pre-image resistance
+						<br/>5. Second preimage resistance
+						<br/>6. Collision resistance
+						</p>
+						<p>Un'altra proprietà, non presente, è quella di poter essere applicata ricorsivamente.</p>
+						<p><b>Dispersa</b>- dati due messaggi, in cui il secondo messaggio è generato modificando
+							una piccola porzione del primo messaggio, il digest dei 2 messaggi non deve avere alcuna
+							correlazione evidente.</p>
+						<p><b>Pre-image resistance</b> -
+							Dato un hash <em>h</em>, deve essere computazionalmente difficile trovare un messaggio
+							<em>m</em> tale che <em>h = H(m)</em>.
+							Concetto correlato a quello di <em>one way function</em>.
+							Le funzioni che non hanno questa proprietà sono vulnerabili a <b>preimage attack</b>.
+						</p>
+						<p><b>Second pre-image resistance</b> -
+							Dato un input <em>m1</em> deve essere difficile trovare un altro input <em>m2</em>
+							tale che <em>H(m1) = H(m2)</em>.
+							Le funzioni che non hanno questa proprietà sono vulnerabili a <b>second-preimage attack</b>.
+						</p>
+						<p><b>Collision resistance</b> -
+							Deve essere difficile trovare due messaggi differenti tali che <em>H(m1) = H(m2)</em>.
+							Tale coppia è chiamata <b>collisione</b>. 
+							Tale proprietà richiede un hash che sia almeno il doppio di quello richiesto per la
+							per-image resistance, altrimenti è possibile trovare una collisione tramite
+							<b>attacco del compleanno</b>.
+							La probabilità che almeno due persone in un gruppo compiano gli anni lo stesso giorno,
+							in un gruppo di 23 persone la probabilità è circa 0.51; 
+							con 30 persone essa supera 0.70, con 50 persone tocca addirittura 0.97.
+						</p>
+						<p>
+							All'aumentare della lunghezza del digest, diminusce la probabilità di una collisione.
+							In un digest di 256 bit, vi sono 1.18e<sup>77</sup> possibili digest. La probabilità
+							di una collisione è 8.64e<sup>-76</sup>% (assumendo distribuzione uniforme).
+					</aside>
+				</section>
+			</section>
+			
+			<!-- Indirizzi bitcoin -->
+			<section>
+				<section id="sli-pkeys">
+					<h3>Indirizzi Bitcoin e firma delle transazioni</h3>
+					<card>Ad ogni coppia di chiavi corrisponde un "account"</card>
+					<card>Indirizzo Bitcoin &cong; chiave pubblica</card>
+					<card>La corrispondente chiave privata serve per firmare le transazioni in uscita da quell'indirizzo</card>
+			
+					<aside class="notes">
+						<p>In Bitcoin la coppia di chiavi è generata tramite crittografia a curva ellittica.</p>
+					</aside>
+				</section>
+				
+				<section data-transition="slide" id="sli-keyad">
+					<h3>Generazione di un indirizzo Bitcoin</h3>
+					
+					<div style="display:grid; grid-template-columns: 1fr 1fr;">
+					<img style="height:13em; border-radius: 10px" src="assets/images/public-key-address.png">
+					<img class="fragment" style="border-radius: 10px;" src="assets/images/base58check.png">
+					</div>
+					<img style="position: absolute;left: 8em;top: 4em;border-style: solid;box-shadow: 10px 10px 15px black;"
+					 class="fragment" src="assets/images/address-qr.png">
+			
+					<aside class="notes">
+						<p>0x00 è il version byte (0x80 per la chiave privata), Pay-to-Script-Hash Address: 0x05 (3),
+								Bitcoin Testnet Address: 0x6F (m or n).</p>
+						<p><b>Base58</b> - Codifica introdotta con bitcoin, composta da numeri e lettere maiuscoli
+						e minuscoli. Si escludono caratteri ambigui: 0 (zero), O (o maiuscola), I (i maiuscola) and l (L minuscola)</p>
+						<p>Base58Check is a Base58 encoding format that unambiguously encodes the type of data in
+							the first few characters and includes an error detection code in the last few characters</p>
+					</aside>
+				</section>
+			</section>
+			
+			<!-- Creazione di una transazione -->
+			<section>
+				<h3>Creazione di una transazione</h3>
+				<img src="assets/images/transaction-creation.png">
+			</section>
+			
+			<!-- Propagazione di una transazione -->
+			<section>
+				<h3>Propagazione di una transazione</h3>
+				<div >
+					<img style="height: 13em;" src="assets/images/transaction-propagation.png">
+				</div>
+			</section>
+			
+			<!-- Un ulteriore problema -->
+			<section id="sli-dubsp">
+				<h3>Un ulteriore problema</h3>
+				<card>Un attaccante potrebbe inviare a metà dei nodi una transazione in cui invia <em>n</em> bitcoin ad A</card>
+				<card>ed all'altra metà dei nodi una transazione in cui invia <u>gli stessi</u> <em>n</em> bitcoin a B</card>
+				<card class="fragment" data-fragment-index="1">Entrambe le transazioni, se prese singolarmente, sono valide</card>
+				<card class="fragment footer"  data-fragment-index="1">Double Spending</card>
+				<card class="fragment" data-fragment-index="2">Necessario che tutti i nodi raggiungano un <b>consenso</b> sulle transazioni presenti nel ledger (e sul loro ordine)</card>
+			</section>
+			
+			<!-- Il problema dei generali bizantini e PBFT -->
+			<section>
+				<section id="sli-byzge">
+					<h3>Il problema dei generali bizantini</h3>
+					<img src="assets/images/byzantine-generals-problem-paper.png">
+					<div style="position: absolute;top: 13%;left: 13%;background: rgba(100,100,100,0.7);border-radius: 20px;padding-left: 10px;padding-bottom: 10px;"
+					 class="fragment blurred-background">
+						<list-header>Byzantine fault</list-header>
+						<card>Nessun valore restituito</card>
+						<card>Valore restituito non corretto o inconsistente</card>
+						<card>Valore restituito deliberatamente non corretto</card>
+						<card>Qualsiasi altro comportamento</card>
+					</div>
+					<aside class="notes">
+						<p>Come parti differenti possono comunicare in modo sicuro e raggiungere
+							un <b>accordo</b> se i canali di comunicazione non sono sicuri e ci
+							potrebbero essere fra loro dei <b>traditori</b>?
+						</p>
+						<p>Il paper è del 1982</p>
+						<p>
+							<a href="https://medium.com/loom-network/understanding-blockchain-fundamentals-part-1-byzantine-fault-tolerance-245f46fe8419">Qui</a>
+							maggiori dettagli su BFT.
+						</p>
+						<p>CAP Theorem (Brewer, 1998)</p>
+						<ul>
+							<li><b>Consistenza</b></li>
+							<li><b>Availability</b></li>
+							<li><b>Partition (fault) tolerance</b></li>
+						</ul>
+						<p>Max 2 su 3</p>
+					</aside>
+				</section>
+				<section data-transition="slide" id="sli-pbft">
+					<h3>Practical Byzantine Fault Tolerance</h3>
+					<div style="display:grid; grid-template-columns: 2fr 3fr">
+						<img src="assets/images/pbft-paper.png">
+						<div>
+							<card class="header">PBFT - Castro, Liskov - 1999</card>
+							<list-item data-item-icon="ti-like">Molto veloce e scalabile</list-item>
+							<list-item class="fragment" data-item-icon="ti-dislike">I partecipanti devono essere noti a priori</list-item>
+						</div>
+					</div>
+			
+					<aside class="notes">
+						<p>Il problema è stato risolto da Castro e Liskov in un <a href="http://pmg.csail.mit.edu/papers/osdi99.pdf">paper del 1999</a>.</p>
+						<p>Utilizzato in Hyperledger</p>
+						<p><em>Blockchain Quick Reference</em> - pag. 211</p>
+					</aside>
+				</section>
+			</section>    
+			
+			<!-- Chi partecipa al consenso? -->
+			<section id="sli-cons1">
+				<h3>Chi partecipa al consenso?</h3>
+			
+				<card class="header">Ipotesi</card>
+				<card>1 nodo = 1 voto</card>
+				<card class="fragment">Lo stato "vincente" è quello con la maggioranza dei voti</card>
+			
+				<svg onclick="[...document.getElementsByClassName('svg-node-circle')].forEach(el => {el.setAttribute('fill', 'green');});" id="svg-cons1" viewBox="0 0 900 500" height="300" width="600">
+					<rect width="100%" height="100%" rx="15" ry="15" fill="rgba(240,240,240,0.6)"/>
+			
+					<line x1="620" y1="320" x2="720" y2="85" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="620" y1="320" x2="630" y2="450" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="620" y1="320" x2="700" y2="185" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="620" y1="320" x2="535" y2="420" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="620" y1="320" x2="810" y2="300" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="620" y1="320" x2="530" y2="140" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="620" y1="320" x2="430" y2="430" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="620" y1="320" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="320" y1="365" x2="620" y2="320" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="180" y1="240" x2="110" y2="110" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="180" y1="240" x2="130" y2="320" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="180" y1="240" x2="310" y2="140" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="180" y1="240" x2="320" y2="365" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="180" y1="240" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="450" y1="80" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="450" y1="80" x2="110" y2="110" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="450" y1="80" x2="310" y2="140" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="450" y1="80" x2="530" y2="140" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="450" y1="80" x2="720" y2="85" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="320" y1="365" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="320" y1="365" x2="130" y2="320" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="320" y1="365" x2="430" y2="430" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="320" y1="365" x2="310" y2="140" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="430" y1="430" x2="535" y2="420" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="535" y1="420" x2="630" y2="450" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="630" y1="450" x2="810" y2="300" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="810" y1="300" x2="700" y2="185" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="720" y1="85" x2="700" y2="185" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="530" y1="140" x2="700" y2="185" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="720" y1="85" x2="810" y2="300" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="720" y1="85" x2="530" y2="140" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="310" y1="140" x2="530" y2="140" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="310" y1="140" x2="110" y2="110" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="130" y1="320" x2="110" y2="110" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="530" y1="140" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:3" />
+					<line x1="310" y1="140" x2="450" y2="250" style="stroke:rgb(0,0,0);stroke-width:3" />
+			
+					<circle cx="620" cy="320" r="30" stroke="black" stroke-width="3" class="svg-node-circle" fill="pink" />
+					<text x="605" y="335" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="180" cy="240" r="30" stroke="black" stroke-width="3" class="svg-node-circle" fill="green" />
+					<text x="165" y="255" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="450" cy="80" r="30" stroke="black" stroke-width="3" class="svg-node-circle" fill="green" />
+					<text x="435" y="95" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="320" cy="365" r="30" stroke="black" stroke-width="3" class="svg-node-circle" fill="green" />
+					<text x="305" y="380" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="110" cy="110" r="30" stroke="black" stroke-width="3" class="svg-node-circle" fill="pink" />
+					<text x="95" y="125" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="130" cy="320" r="30" stroke="black" stroke-width="3" class="svg-node-circle" fill="green" />
+					<text x="115" y="335" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="810" cy="300" r="30" stroke="black" stroke-width="3" class="svg-node-circle" fill="white" />
+					<text x="795" y="315" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="310" cy="140" r="30" stroke="black" stroke-width="3" class="svg-node-circle" fill="pink" />
+					<text x="295" y="155" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="720" cy="85" r="30" stroke="black" stroke-width="3" class="svg-node-circle" fill="white" />
+					<text x="705" y="100" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="530" cy="140" r="30" stroke="black" stroke-width="3" class="svg-node-circle" fill="pink" />
+					<text x="515" y="155" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="430" cy="430" r="30" stroke="black" stroke-width="3" fill="green" />
+					<text x="415" y="445" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="630" cy="450" r="30" stroke="black" stroke-width="3" class="svg-node-circle" fill="white" />
+					<text x="615" y="465" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="700" cy="185" r="30" stroke="black" stroke-width="3" class="svg-node-circle" fill="pink" />
+					<text x="685" y="200" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="535" cy="420" r="30" stroke="black" stroke-width="3" class="svg-node-circle" fill="green" />
+					<text x="520" y="435" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+					<circle cx="450" cy="250" r="30" stroke="black" stroke-width="3" class="svg-node-circle" fill="white" />
+					<text x="435" y="265" style="font-size:90%; font-family: tagomi-icons">p</text>
+			
+				</svg>
+			
+				<aside class="notes">
+					<p>In questo caso assumiamo che la maggioranza dei nodi siano onesti</p>
+				</aside>
+			</section>
+			
+			<!-- Sybil attack -->
+			<section id="sli-sybil">
+				<h3>Sybil attack</h3>
+			
+				<div class="twocolumns">
+					<div class="left">
+						<img style="width: 80%" src="assets/images/sybil_book_cover.jpg">
+					</div>
+					<div class="right">
+						<card>a.k.a. Pseudospoofing</card>
+						<card>Facilità di creare nuove entità false</card>
+					</div>
+				</div>
+			
+				<div class="fragment overlay-bottom">
+					<img class="img-responsive" src="assets/images/sybil-attack.png">
+				</div>
+			
+				<aside class="notes">
+					<p>Libro 1973 - Flora Rheta Schreiber</p>
+					<p>Sybil Dorset - 16 differenti personalità</p>
+					<p>Disturbo dissociativo dell'identità o disturbo di personalità multipla</p>
+					<p>Film del 2007</p>
+					<p>Una stanza piena di gente (1981 - Daniel Keyes) - Storia di Billy Milligan - 24 personalità</p>
+					<p>Attacco informatico dove i sistemi di reputazione sono sovvertiti falsificando le identità di una persona in una rete p2p</p>
+					<p>https://medium.com/coinmonks/sybil-attack-and-byzantine-generals-problem-2b2366b7146b</p>
+				</aside>
+			</section>
+			
+			<section data-background="./assets/images/giphy-illumination.gif">
+			</section>
+			
+			<!-- Proof-of-Work -->
+			<section id="sli-prow1">
+				<h3>Proof-of-work</h3>
+			
+				<hcard data-left-icon="ti-bulb">
+					<p>sostituire una <b>barriera formale</b> alla partecipazione con una <b>barriera economica</b></p>
+				</hcard>
+			
+				<card class="fragment">Puoi partecipare al consenso se dimostri di aver compiuto una certa quantità di lavoro</card>
+			</section>
+			
+			<!-- HashCash -->
+			<section id="sli-hcas1">
+				<h3>HashCash</h3>
+				<div style="display: grid; grid-template-columns: 1fr 3fr;">
+					<div class="left">
+						<div class="vcard">
+							<div class="header">
+								HashCash
+							</div>
+							<div class="content">
+								<img src="assets/images/adam_back.jpg">
+							</div>
+							<div class="footer">
+								1997 - Adam Back
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<card>Nasce come anti-spam</card>
+						<card>Una mail è non-spam se è associata ad un <em>nonce</em> il cui hash ha i primi 20 bit uguali a zero</card>
+						<card>Basato su SHA-1</card>
+						<card>Utilizzato da SpamAssassin e da Microsoft</card>
+					</div>
+				</div>
+			
+				<aside class="notes">
+					<p><a href="https://www.bitcoinmining.com/what-is-hashcash/">What is HashCash?</a></p>
+				</aside>
+			</section>
+			
+			<!-- Come funziona HashCash ?-->
+			<section id="sli-hcas2">
+				<h3>Come funziona HashCash?</h3>
+				<div style="display: grid; grid-template-columns: 150px 1fr;column-gap: 20px;row-gap: 10px;">
+					<label style="justify-self: end;" for="mailrecipient">A:</label>
+					<input style="text-align: left;font-size: 0.8em;" type="text" id="mailrecipient" value="fabiano.sarracco@gmail.com"/>
+					<label style="justify-self: end;" for="mailcontent">Testo:</label>
+					<textarea style="width:100%;font-size: 0.8em;" id="mailcontent" rows="6">Questo è il testo della mail che voglio inviare</textarea>
+					<label style="justify-self: end;" for="mailnonce">Nonce:</label>
+					<input style="text-align: right;font-size: 0.8em;" type="text" disabled id="mailnonce"></input>
+				</div>
+				<div id="hashcash-buttons" style="padding-top: 0.2em; padding-bottom: 0.2em;font-size: 2em;display:flex">
+					<div style="display: grid; grid-template-columns: 1.2fr 1fr; margin-left:30px; margin-right: 15px;">
+						<label style="background: gray; padding-left: 10px; padding-right: 10px; font-size: 0.75em; margin-right: -20px; border-top-left-radius: 10px; border-bottom-left-radius: 10px;" 
+							for="hashcashdiff">Diff.</label>
+						<input style="font-size: 0.8em; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border:0; text-align: right; width: 100px;"
+							min="1" max="10" type="number" id="hashcashdiff" value="1">
+					</div>
+					<button style="border-top-right-radius: 0; border-bottom-right-radius: 0;" type="button" id="hashcashspeed1" onclick="hcChangeSpeed(0);" class="btn selected">&times;1</button>
+					<button style="border-radius: 0;" type="button" id="hashcashspeed2" onclick="hcChangeSpeed(1);" class="btn">&times;2</button>
+					<button style="border-radius: 0;" type="button" id="hashcashspeed4" onclick="hcChangeSpeed(2);" class="btn">&times;4</button>
+					<button style="border-top-left-radius: 0; border-bottom-left-radius: 0;" type="button" id="hashcashspeed8" onclick="hcChangeSpeed(3);" class="btn">&times;8</button>
+					<button style="margin-left: 20px;" type="button" class="btn" onclick="hcSearchNonce();">Cerca nonce</button>
+				</div>
+				<div>
+					<div style="width: 100%;background: rgba(200,200,200,0.8);border-radius: 10px;font-family: 'Major Mono Display', monospace;">
+						<span id="hashoutput"></span>
+					</div>
+				</div>
+				<script src="js/hashcash.js"></script>
+			</section>
+			
+			<!-- Proof-of-work in Bitcoin -->
+			<section id="sli-powbt">
+				<h3>Proof-of-Work in Bitcoin</h3>
+				<p>
+					<img class="img-responsive" src="assets/images/Proof-of-Work.png"/>
+				</p>
+				<card>Utilizza una versione modificata di HashCash basata su doppio SHA-256</card>
+				<card>Si applica non sulla singola transazione ma sull'<b>header di un blocco</b> di transazioni</card>
+			
+				<aside class="notes">
+					<p>PoW opera sul principio che è <strong>costoso</strong> aggiungere un blocco di nuove transazioni sulla blockchain.</p>
+					<p>Il <strong>costo</strong> di un blocco è il lavoro che deve essere effettuato, ovvero il <strong>calcolo</strong>,
+					noto anche come mining.</p>
+					<p>Un nodo deve calcolare l'hash corretto (firma) del blocco al fine di renderlo sicuro ed aggiungerlo alla blockchain.</p>
+					<p>Un hash corretto è tale da soddisfare il <strong>pattern di difficoltà</strong> predeterminato.</p>
+					<p>Nel caso di bitcoin corrisponde al numero di zeri iniziali.</p>
+					<p>Questo hash deve essere calcolato utilizzando i valori presenti nell'header del blocco.</p>
+					<p>Essendo questi valori fissi, per poter ottenere un hash sempre diverso, si aggiunge un quarto valore chiamato <strong>nonce</strong>.</p>
+					<p>Andando avanti per tentativi utilizzando <strong>nonce</strong> sempre diversi, un nodo può alla fine trovare un hash valido.</p>
+					<p>Il <b>doppio SHA</b> è utilizzato per prevenire attacchi di tipo
+						<a href="https://en.wikipedia.org/wiki/Length_extension_attack">Length Extension</a></p>
+				</aside>
+			</section>
+			
+			<section class="center" data-background-image="assets/images/background-questions.jpg">
+			<hcard data-left-icon="ti-question">
+				Se le transazioni non fanno parte dell'hash del blocco come si assicura che non vengano modificate successivamente?
+			</hcard>
+			</section>
+			
+			<!-- Block header -->
+			<section id="sli-blhea">
+				<h3>Block Header</h3>
+				<img src="assets/images/block-header.jpg">
+				<github url="https://github.com/bitcoin/bitcoin/blob/5029e94f855c73bad2e0ea6dc0378f33787ae131/src/primitives/block.h#L20">bitcoin/src/primitives/block.h/CBlockHeader</github>
+			
+				<aside class="notes">
+					<p><b>Header</b> - in tutto 80 byte</p>
+					<p><b>Magic number</b> - Valore costante 0xD9B4BEF9. Indica: inizio del blocco, rete di produzione</p>
+					<p><b>Version</b> - Attualmente 0x20000000</p>
+					<p>Strange version numbers are likely due to a mining optimization known as <b>ASICBOOST</b>.
+						This optimization is due to a quirk of SHA256 and Bitcoin's block header format.
+						ASICBOOST is a hardware level optimization for mining chips that allows them to be more
+						power efficient. One of the methods for ASICBOOST is to modify the block version number.
+						The other method is to change only the first 4 bytes of the merkle root, but that requires
+						much more computation than just changing the version number.</p>
+					<p>The hashes are in internal byte order; the other values are all in <b>little-endian</b> order.</p>
+					<p><a href="https://bitcoin.org/en/developer-reference#block-chain">Bitcoin developer reference</a></p>
+				</aside>
+			</section>
+			
+			<!-- Merkle Tree -->
+			<section>
+				<section id="sli-merkl">
+					<h3 style="margin-bottom: 0">Merkle Tree</h3>
+					<card>Header del blocco contiene il root del <b>merkle tree</b> delle transazioni</card>
+					<img style="width: 90%; margin-left: -5%;" src="assets/images/merkle-tree.png">
+					<card class="fragment">Semplifica la convalida di una singola transazione</card>
+			
+					<aside class="notes">
+						<p>Ralph Merle in 1979.</p>
+						<p>Struttura dati tamperproof che serve per verificare che un qualcosa esiste.
+							Nel nostro caso una specifica transazione.
+						</p>
+						<p>Utilizzato anche in IPFS e in Apache Cassandra</p>
+						<p><a href="https://gist.github.com/shirriff/c9fb5d98e6da79d9a772#file-merkle-py">
+							https://gist.github.com/shirriff/c9fb5d98e6da79d9a772#file-merkle-py</a></p>
+					</aside>
+				</section>
+				
+				<section data-transition="slide" id="sli-merke">
+					<h3>Merkel Tree</h3>
+					<img src="assets/images/merkel-tree.png">
+				</section>
+			
+				<section data-transition="slide" id="sli-mmerk">
+					<h3>Merkel Merkle Tree</h3>
+					<img style="height: 13em;" src="assets/images/merkel-merkle-tree.png">
+				</section>
+			</section>
+			
+			<!-- UTXO -->
+			<section>
+				<section id="sli-utxo1">
+					<h3>UTXO</h3>
+			
+					<card class="header">Unspent Transaction Output (UTXO)</card>
+					<card>Lo stato è costituito dalla collezione di tutti gli output di transazione che non sono stati ancora spesi</card>
+					<card>Non esiste concetto di account con balance</card>
+					<card>Una transazione valida utilizza solo UTXO come input</card>
+					<card>Può essere speso solo per intero</card>
+			
+					<aside class="notes">
+						<p>Per semplificare la verifica della spendibilità dei fondi, 
+						Bitcoin non utilizza il concetto di account con saldo.</p>
+						<p>In genere in ogni transazione ci sono uno o più UTXO in input e
+							2 UTXO in output (pagamento e resto)</p>
+						<p>UTXO è un po' come <b>un assegno</b></p>
+					</aside>
+				</section>
+				<section data-transition="slide" id="sli-utxo2">
+					<img src="assets/images/utxo.png">
+					<aside class="notes">
+						<p>Un UTXO è univocamente determinato dalla coppia (id tx, indice dell'output nella tx)</p>
+					</aside>
+				</section>
+			</section>
+			
+			<!-- Mining -->
+			<section id="sli-minin">
+				<h3>Mining</h3>
+				<div style="display:grid;grid-template-columns: 250px 1fr">
+					<img style="background:none;box-shadow: none;" src="assets/images/bitcoin-mining.png">
+					<div>
+						<div class="card">Il primo miner che trova la soluzione al problema distribuisce il blocco agli altri nodi</div>
+						<div class="card">Gli altri nodi verificano la validità del blocco</div>
+						<div class="card">Se il blocco è valido viene aggiunto alla blockchain</div>
+					</div>
+				</div>
+				<aside class="notes">
+					<p>Una volta trovato il nonce giusto, esso ed il relativo hash ottenuto vengono messi all'interno dell'header del blocco</p>
+					<p>Il blocco così ottenuto viene distribuito agli altri nodi della rete che a loro volta ne verificano la validità</p>
+					<p>Se più del 50% dei nodi valida il blocco, allora è raggiunto il consenso</p>
+					<p>Ogni nodo della rete possiede una copia completa della blockchain con tutte le transazioni avvenute
+						dall'inizio della rete. Attualmente circa 200GB.
+					</p>
+				</aside>
+			</section>
+			
+			<section id="sli-bccon">
+				<h3>Gestione dei conflitti</h3>
+			
+				<hcard data-left-icon="ti-question">Che succede se due blocchi diversi vengono generati nello stesso istante?</hcard>
+			
+				<img src="assets/images/blockchain-split.png">
+			
+				<div class="fragment">
+					<hcard style="max-height:3.5em;" data-left-icon="ti-law">la catena valida è <b>sempre</b> la più lunga</hcard>
+				</div>
+			
+				<div class="fragment">
+					<img style="position:relative; top: -8.92em" src="assets/images/blockchain-split-resolved.png">
+				</div>
+				
+				<aside class="notes">
+					<p>Se la suddivisione della rete è 65%-35%, la blockchain validata dal 65% dei miner ha il doppio di
+						probabilità di trovare per prima il blocco successivo.</p>
+					<p>I miner che stanno nel 35% rischiano di minare blocchi che poi verranno scartati.</p>
+				</aside>
+			</section>
+				
+			<section id="sli-bcsec">
+				<h3>Sicurezza della blockchain</h3>
+			
+				<card>
+					Un attaccante potrebbe effettuare <b>double spending</b> dapprima propagando
+					una transazione di pagamento, e poi modificando il blocco in cui tale transazione
+					è inserita per alterare la transazione.
+				</card>
+				<img style="width:80%;border-radius: 15px;" src="assets/images/blockchain-51-attack.png">
+			</section>
+			
+			<section id="sli-bcse2">
+					<hcard style="max-height:3em;" data-left-icon="ti-law">la catena valida è <b>sempre</b> la più lunga</hcard>
+					<div class="card">Modificare anche una singola transazione del <i>n</i>-ultimo blocco richiede 
+						il ricalcolo della PoW di tutti gli ultimi <i>n</i> blocchi</div>
+				<div class="card fragment">... mentre nel frattempo i nodi onesti continuano a minare
+						nuovi blocchi sulla blockchain non manomessa</div>
+				<div class="card footer fragment">Impossibile</div>
+				<div class="card fragment">... a meno che l'attaccante non dispone di una potenza di 
+							calcolo > 50% della potenza totale</div>
+				<aside class="notes">
+					<p>Vedere esempio concreto su <a href="https://anders.com/blockchain/blockchain.html">https://anders.com/blockchain/blockchain.html</a></p>
+					<p>Una transazione con almeno 6 conferme è assolutamente inalterabile.</p>
+				</aside>
+			</section>
+			
+			<section id="sli-powbi">
+				<h3>Incentivi alla PoW</h3>
+			
+				<div class="card">Maggiore è la potenza di calcolo totale per il mining, maggiore è la sicurezza della rete</div>
+			
+				<list-header>Incentivi al mining</list-header>
+				<div>
+					<list-item data-value="1">Block reward</list-item>
+					<list-item data-value="2">Commissioni di transazione</list-item>
+				</div>
+			
+				<aside class="notes">
+					<p>Cosa incentiva un nodo a lavorare per trovare la PoW?</p>
+				</aside>
+			</section>
+				
+			<section>
+				<section id="sli-blre1">
+					<h3>Il block reward</h3>
+					<card class="header">Transazione coinbase</card>
+					<card>Prima transazione di un blocco, priva di input</card>
+					<card>L'indirizzo di output è scelto dal miner</card>
+					<card>L'importo è fisso e dipende dal numero del blocco (<b>block height</b>)</card>
+					<card>Inizialmente 50 BTC, poi dimezzato ogni 210 000 blocchi</card>
+			
+					<aside class="notes">
+						<p>Il miner aggiunge al blocco una transazione in cui si "assegna" alcuni bitcoin come ricompensa</p>
+						<p>210000 blocchi = circa 4 anni</p>
+					</aside>
+				</section>
+				<section data-transition="slide" id="sli-blre2">
+				<h3>Calcolo del block reward</h3>
+			
+				<img src="assets/images/bitcoin-block-reward.png">
+				<card style="text-align: center;">Nel 2140 saranno generati 21M BTC</card>
+				<aside class="notes">
+					<p>Sono previsti in tutto 64 dimezzamenti, dopodiche il block reward sarà zero.</p>
+				</aside>
+				</section>
+				<section data-transition="slide" id="sli-bhalv">
+					<h3>Prossimo halving</h3>
+					<br/>
+					<a data-nosymbol href="http://www.bitcoinblockhalf.com/"><div style="font-size: 0.75em;width: 100%; margin-left: 20%" id="flipdown-halving" class="flipdown"></div></a>
+				</section>
+			</section>
+			
+			<!-- Commissioni di transazione -->
+			<section id="sli-trfe1">
+				<h3>Commissioni di transazione</h3>
+				<card>Per ogni transazione valida in un blocco:
+					<p style="font: unset">
+						$$\sum_i input_i \geq \sum_j output_j$$
+					</p>
+				</card>
+				<div class="card">Se la somma degli output è inferiore alla somma degli input,
+					 la parte residua è da considerarsi come commissione (<b>fee</b>) per il miner</div>
+				<hcard style="max-height: 3.2em" class="fragment" data-left-icon="ti-question">
+					Perché devo pagare una commissione?
+				</hcard>
+				<aside class="notes">
+						<p>La somma degli importi in output di una transazione valida 
+								deve essere minore o uguale della somma degli importi in input.</p>
+								<p>Se minore, la differenza va considerata come fee per il miner.</p>
+						
+				</aside>
+			</section>
+			
+			<!-- Mempool -->
+			<section id="sli-trfe2">
+				<h3>Mempool</h3>
+				<card>Tutte le transazioni valide che non sono ancora state inserite in un blocco,
+					si trovano nel <b>mempool</b>.</card>
+				<card class="fragment" data-fragment-index="1">Il miner pesca dal mempool le transazioni da inserire nel blocco che sta minando</card>
+				<card class="fragment" data-fragment-index="2"><b>Limite</b> alla dimensione massima di un blocco</card>
+				<card class="fragment" data-fragment-index="2">&rarr; <b>Limite</b> al numero di transazioni inseribili nel blocco</card>
+				<card class="fragment" data-fragment-index="3">Il miner sceglie le transazioni che pagano commissioni maggiori</card>
+			
+				<aside class="notes">
+					<p>Una transazione occupa in media 200 byte.</p>
+					<p>In Bitcoin un blocco contiene in media circa 500 transazioni</p>
+					<p>Maggiore è la commissione, maggiore è la priorità per essere incluso immediatamente nella chain</p>
+				</aside>
+			</section>
+			
+			<!-- Come calcolare la commissione ottimale? -->
+			<section id="sli-trfe3">
+				<h3>Come calcolare la commissione ottimale?</h3>
+				<div class="card">Si misura in Satoshi/byte è dipende da quanto è "affollato" il mempool</div>
+				<div class="card">1 Satoshi = 10<sup>-8</sup>BTC</div>
+				<div class="card">
+					<a href="https://transactionfee.info/charts/feerate/percentiles?avg=7&step=false&start=2018-11-17&end=2019-01-24">Transactionfee.info</a>
+					<br/>
+					<a href="https://bitcoinfees.earn.com">bitcoinfees.earn.com</a>
+				</div>
+			</section>
+			
+			<!-- Una catena collegata di blocchi - Genesis block -->
+			<section>
+				<section id="sli-genbl">
+					<h3>Una catena collegata di blocchi</h3>
+					<card>Ogni blocco contiene l'hash del blocco precedente</card>
+					<card>Il primo blocco è un blocco speciale ed è chiamato <b>Genesis Block</b></card>
+					<card>"Cablato" nel codice</card>
+					<github url="https://github.com/bitcoin/bitcoin/blob/72d34c0edc5ad9e69e0d054459ec15d2278f206b/src/chainparams.cpp#L52">bitcoin/src/chainparams.cpp/CreateGenesisBlock()</github>
+					<aside class="notes">
+						<p>L'output della coinbase del primo blocco non è spendibile</p>
+						<p>I BTC minati direttamente da Satoshi Nakamoto non sono stati mai spesi</p>
+					</aside>
+				</section>
+			
+				<section data-transition="slide" id="sli-genbl">
+					<h3>Il Genesis Block</h3>
+					<img src="assets/images/bitcoin-genesis-block.jpg">
+					<div style="position: absolute;top: 20%;left:10%" class="fragment fade-in">
+						<img style="max-height: 16em" src="assets/images/the-times-chancellor-cover.jpg">
+					</div>
+				</section>
+			</section>
+			
+			<!-- Mining hardware -->
+			<section id="sli-asics">
+				<h3>Mining hardware</h3>
+			
+				<card>2009-2010 Mining tramite <b>CPU</b> <br/><span style="font-size:80%">0.1-50 MH/s - 10 kWatt/GH/s</span></card>
+				<card class="fragment" data-fragment-index="2">2010-2013 Mining tramite <b>GPU</b> <br/><span style="font-size:80%">1-1000 MH/s - 200 Watt/GH/s</span></card>
+				<card class="fragment" data-fragment-index="3">2013-oggi Mining tramite <b>ASIC</b> <br/><span style="font-size:80%">0.1-50 TH/s - 0.05 Watt/GH/s</span></card>
+			
+				<div class="display:grid;grid-template-columns:1fr 1fr 1fr">
+					<img style="height: 5em;" src="assets/images/cpu.jpg">
+					<img style="height: 5em;" class="fragment" data-fragment-index="2" src="assets/images/gpu-mining-rig.jpg">
+					<img style="height: 5em;" class="fragment" data-fragment-index="3" src="assets/images/asic-terminator-t3.jpg">
+				</div>
+				<aside class="notes">
+					<p>When Bitcoin was first released, you could mine 100 coins a day using just your CPU</p>
+					<p>Dati CPU e GPU: <a href="https://en.bitcoin.it/wiki/Non-specialized_hardware_comparison">Non-specialized_hardware_comparison</a></p>
+					<p>Dati GPU: <a href="https://gpustats.com/">GPU-Stats</a></p>
+					<p>ASIC - Application specific integrated circuits.</p>
+				</aside>
+			</section>
+			
+			<!-- Aggiustamento della difficoltà -->
+			<section>
+				<section id="sli-diffa">
+					<h3>Aggiustamento della difficoltà</h3>
+					<card><b>Obiettivo</b>: un nuovo blocco in media ogni 10 minuti</card>
+					<card>Ogni 2016 blocchi il target value viene ricalcolato in base al tempo medio degli ultimi 2016 blocchi</card>
+					<github url="https://github.com/bitcoin/bitcoin/blob/9b63c436a699a7c9dea0999db7053d554b87958a/src/pow.cpp#L49">bitcoin/src/pow.cpp/CalculateNextWorkRequired()</github>
+					<aside class="notes">
+						<p>10 minuti è un tempo sufficientemente lungo per non dare un vantaggio al miner che ha minato l'ultimo blocco rispetto ai concorrenti.</p>
+						<p>In Ethereum, invece, il tempo di blocco è di 20 secondi, in Stellar di 4 secondi.</p>
+						<p>2016 blocchi sono circa 2 settimane</p>
+						<p>https://en.bitcoin.it/wiki/Difficulty</p>
+						<p>If the correction factor is greater than 4 (or less than 1/4), 
+							then 4 or 1/4 are used instead, to prevent the change to be too abrupt.</p>
+						<p>There is a bug in the implementation, due to which the calculation is based
+						on the time to find the last 2015 blocks rather than 2016. Fixing it would 
+						require a hard fork and is thus deferred for now.</p>
+						<p>Il genesis block ha difficoltà 1</p>
+						<p>La difficoltà 1 imposta il target ad un numero pari a 32 zeri e tutti 1</p>
+						<p>Attualmente un blocco valido deve avere un hash che inizia con almeno 20 zeri</p>
+					</aside>
+				</section>
+				<section data-transition="slide" id="sli-difa2">
+					<a data-nosymbol style="height:90%" href="https://bitcoinwisdom.com/bitcoin/difficulty"><img src="assets/images/hashrate-difficulty.png"></a>
+				</section>
+			</section>
+			
+			<!-- La corsa all'H/sec -->
+			<section id="sli-miner">
+				<h3>La corsa all'Hash/sec</h3>
+				<!-- <button type="button" class="btn" id="hashChartStartBtn"
+					style="position:absolute;top: 50%; left:48%"
+					onclick="hashChartStart()">Play</button> -->
+				<canvas id="hashChart" style="width:512px;height:250px"></canvas>
+				<img id="hashChartStartBtn"
+					style="background:none; box-shadow: none; position:absolute;top: 45%; left:35%; width: 30%;"
+					onclick="hashChartStart()" src="assets/images/play-button.png">
+				<card class="fragment">
+					50 EH/s &middot; (0.05 W/GH/s = 50 MW/EH/s)
+					&rarr; 2,5 GW
+				</card>
+			
+				<a style="position:absolute;top: 19%;left: 29%;height: 75%;border-radius: 15px;background: rgba(200,200,200,0.7);" class="fragment" data-nosymbol href="https://www.blockchain.com/charts/hash-rate">
+					<img style="box-shadow:none; background:white;"
+					 src="assets/images/energy-efficiency-label-F.png">
+				</a>
+				<script>
+					const samples = 20;
+					const speed = 1500;
+					let values = [];
+					let labels = [];
+					let charts = [];
+					const scale = 1;
+					const hashPowers = [
+						['2009-01-01', 0.0005, '0.5 MH/s'],
+						['2010-01-01', 0.008, '8 MH/s'],
+						['2011-01-01', 116, '116 GH/s'],
+						['2012-01-01', 9000, '9 TH/s'],
+						['2013-01-01', 23000, '23 TH/s'],
+						['2014-01-01', 10000000, '10 PH/s'],
+						['2015-01-01', 300000000, '300 PH/s'],
+						['2016-01-01', 800000000, '800 PH/s'],
+						['2017-01-01', 2500000000, '2.5 EH/s'],
+						['2018-01-01', 15000000000, '15 EH/s'],
+						['2019-01-01', 41500000000, '41,5 EH/s']
+					];
+					let valCount = 0;
+			
+					function initialize() {
+						charts.push(new Chart(document.getElementById("hashChart"), {
+							type: 'line',
+							data: {
+							//labels: labels,
+							datasets: [{
+								data: values,
+								backgroundColor: 'rgba(255, 219, 132, 0.2)',
+								borderColor: 'rgb(255, 219, 132)',
+								borderWidth: 3,
+								lineTension: 0.1,
+								pointRadius: 3
+							}]
+							},
+							options: {
+								responsive: true,
+								animation: {
+									duration: speed * 0.5,
+									easing: 'linear'
+								},
+								legend: false,
+								scales: {
+									xAxes: [{
+										type: 'time',
+										time: {
+											unit: 'year'
+										},
+										display: true,
+										gridLines: {
+											color: 'rgb(200,200,200)',
+										},
+										ticks: {
+											fontColor: 'rgb(250,250,250)',
+											fontSize: 15
+										}
+									}],
+									yAxes: [{
+										type: "logarithmic",
+										gridLines: {
+											color: 'rgb(180,180,180)',
+										},
+										ticks: {
+											fontColor: 'rgb(250,250,250)',
+											fontSize: 15,
+											callback: function(value, index, values) {
+												if (!Number.isInteger(Math.log10(value)))
+													return '';
+												if (value > 1000000000) {
+													return (value / 1000000000) + " EH/s ";
+												}
+												if (value > 1000000) {
+													return (value / 1000000) + " PH/s ";
+												}
+												if (value > 1000) {
+													return (value / 1000) + " TH/s ";
+												}
+												return value + " GH/s ";
+											}
+										}
+									}]
+								}
+							}
+						}));
+					}
+			
+					function rescale() {
+						var padding = [];
+						values.splice.apply(values, padding);
+						scale++;
+					}
+			
+					function updateCharts(){
+						charts.forEach(function(chart) {
+							chart.update();
+						});
+					}
+			
+					function progress() {
+						if (valCount < hashPowers.length) {
+							let val = hashPowers[valCount++];
+							values.push({
+								x: val[0],
+								y: val[1]
+							})
+						}
+					}
+			
+					function advance() {
+						progress();
+						updateCharts();
+						
+						setTimeout(function() {
+							requestAnimationFrame(advance);
+						}, speed);
+					}
+			
+					const hashChartStart = () => {
+						document.getElementById('hashChartStartBtn').style.display = 'none';
+						initialize();
+						advance();
+					};
+			
+				</script>
+			</section>
+			
+			<section id="sli-altco">
+				<h3>Altcoin</h3>
+				<list-header>Nuove coin generate a seguito di un cambiamento:</list-header>
+				<card>Regole del protocollo</card>
+				<card class="fragment">Algoritmo di PoW (Scrypt, X11, Blake, X13, CryptoNight, Dagger Hashimoto, Lyra2RE, ...)</card>
+				<card class="fragment">Algoritmo di consenso</card>
+				<card class="fragment">Struttura della blockchain</card>
+			</section>
+			
+			<!-- Altri meccanismi di consenso -->
+			<section id="sli-consm">
+				<h3>Altri meccanismi di consenso</h3>
+			
+				<card>(Delegated) Proof of Stake (PoS-DPos)</card>
+				<card>Proof of Burn (PoB)</card>
+				<card>Proof of Capacity (PoC)</card>
+				<card>Proof of Importance (PoI)</card>
+				<card>Proof of Elapsed Time (PoET)</card>
+				<card>Proof of Activity (PoA)</card>
+			
+				<aside class="notes">
+					<p><b>Proof of Stake</b> - 
+						Validator, non miner.
+						La probabilità di validare il prox blocco 
+						dipende dalla quantità di cripto posseduta e messa in stake.
+						I ricchi diventano sempre più ricchi.
+						</p>
+					<p><b>Delegated Proof of Stake (DPoS)</b> - variante del PoS in cui ciascuno stakeholder
+						può eleggere un delegato chiamato witness.
+						La probabilità di validare è proporzionale al numero di voti.
+						Ogni delegato ha un tempo definito e limitato entro il quale pubblicare un nuovo blocco.
+						Se non generi il blocco o ne generi uno non valido ti può essere tolta la delega.
+						Utilizzata da Bitshares, Steemit e EOS</p>
+					<p><b>Proof of Stake Time</b> - variante in cui si introduce la componente tempo;
+						lo stake incrementa con il tempo</p>
+					<p><a href="https://en.bitcoin.it/wiki/Proof_of_burn"><b>Proof of Burn (PoB)</b></a> 
+							- miner devono dimostrare di aver "bruciato" token, ovvero inviati ad un address non spendibile verificato.
+							Più bruci, più hai probabilità di minare.
+							Utilizzato per bootstrap di una nuova valuta rispetto ad un'altra</p>
+					<p><a href="https://www.burst-coin.org/proof-of-capacity"><b>Proof of Capacity (PoC)</b></a> - 
+							Il miner mette a disposizione capacità del suo disco.
+							Prior to mining in a PoC system, the algorithm generates large data sets known as ‘plots’ and they are stored on your hard drive.
+							Plotting uses a very slow hash known as Shabal.
+							<b>Ratio</b>: lo storage ha lo stesso costo per tutti</p>
+					<p><b>Proof of Importance (PoI)</b> - Ad ogni account è associato un punteggio di importanza;
+						si affida sia allo stake sia all'utilizzo ed 
+						alla movimentazione dei token per stabilire importanza</p>
+					<p><a href="https://medium.com/kokster/understanding-hyperledger-sawtooth-proof-of-elapsed-time-e0c303577ec1"><b>Proof of Elapsed Time (PoET)</b></a>
+						 - A ciascun partecipante al mining viene assegnato un tempo random di attesa.
+						 Necessaria esecuzione in un ambiente trusted.
+						 Ok in reti permissioned come Hyperledger Sawtooth.
+						 Implementato da Intel, utilizza Intel SGX Trusted Execution Environment (TEE).
+						 </p>
+					<p><b>Proof of Activity (PoA)</b> - è un mix di PoW e PoS. Il mining avviene come nei sistemi PoW, ma
+						i blocchi minati non contengono alcuna transazione (solo il reward per il miner), poi il sistema
+						diventa PoS, in base al quale viene scelto un certo numero di validatori per riempire e firmare il blocco.</p>
+				</aside>
+			</section>
+			
+			<section>
+				<section id="sli-forks">
+					<h3>Fork</h3>
+			
+					<card><b>Aggiornamento</b> software dei nodi che <b>modifica</b> una parte del protocollo
+						(struttura dei blocchi, algoritmo PoW, etc.)
+					</card>
+			
+					<card><b>Retrocompatibilità</b></card>
+					<card class="fragment">2 gruppi di miner: chi aggiorna e chi non aggiorna il software</card>
+			
+					<card class="fragment">I blocchi minati da un gruppo possono non essere validi per l'altro</card>
+			
+				</section>
+				<section data-transition="slide" id="sli-fork2">
+					<h3>Fork della chain</h3>
+					<img class="img-responsive" src="assets/images/fork.png">
+				</section>
+			</section>
+			<section id="sli-sfork">
+				<h3>Soft fork</h3>
+				<card>I blocchi minati dalla nuova versione sono validi anche per i nodi non aggiornati
+					(es. nuove regole più restrittive)
+				</card>
+				<card>
+					I miner sono incentivati ad aggiornare perché rischiano di minare blocchi non validi
+				</card>
+				<card>
+					Il fork si risolve in genere in tempi brevi
+				</card>
+			</section>
+			<section>
+				<section id="sli-hfork">
+					<h3>Hard fork</h3>
+					<card>I blocchi minati dalla nuova versione non sono validi per i nodi non aggiornati
+						(es. nuove funzionalità o regole meno restrittive)
+					</card>
+					<card>
+						Necessita consenso da parte di tutti i nodi
+					</card>
+					<card class="fragment header" data-fragment-index="1">Planned Hard Fork</card>    
+					<card class="fragment" data-fragment-index="1">Aggiornamento pianificato e condiviso dagli stakeholder</card>
+					<card class="fragment" data-fragment-index="1">In genere non crea problemi</card>
+				</section>
+				<section data-transition="slide" id="sli-chfor">
+					<card class="header">Contentious Hard Fork</card>
+					<card>Forte disaccordo fra gli stakeholder</card>
+					<card>Può portare alla nascita di 2 criptovalute differenti</card>
+					<card>I possessori della valuta originaria si ritrovano una stessa quantità della nuova valuta</card>
+					<card>Il mercato stabilisce quale chain sopravvive</card>
+				</section>
+				<section data-transition="slide" id="sli-chfoe" >
+					<h3>Esempi di coin split</h3>
+					<div style="text-align: center; text-align: -webkit-center;">
+						<card style="width: 70%; margin-bottom: -10px;" class="header">1 Agosto 2017</card>
+						<div style="width: 70%;display: grid;grid-template-columns: 1fr 60px 1fr;justify-items: center;">
+							<img style="height: 5em; border-radius: 10px;" src="assets/images/logo-bitcoin.png">
+							<span style="font-weight: bold;font-size: 3em;align-self:center">&rarr;</span>
+							<img style="height: 4.6em; background-color: white; border-radius: 10px; padding: 0.2em;"
+								src="assets/images/logo-bitcoin-cash.png">
+						</div>
+			
+						<div class="fragment">
+							<card style="width: 70%; margin-bottom: -10px;" class="header">Luglio 2016</card>
+							<div style="width: 70%;display: grid;grid-template-columns: 1fr 60px 1.3fr;justify-items: center;">
+								<img style="height: 5em; background-color: white; border-radius: 10px;" src="assets/images/logo-ethereum.png">
+								<span style="font-weight: bold;font-size: 2em;align-self:center">&rarr;</span>
+								<img style="height: 5em; border-radius: 10px; max-width: 8.5em;" src="assets/images/logo-ethereum-classic.png">
+							</div>
+						</div>
+					</div>
+					<aside class="notes">
+						<p>DAO - SARL svizzera. Raccolse 11.5 milioni di Ether</p>
+						<p>Giugno 2016 - The DAO Hach 3.6 milioni di Ether (50 mil USD).</p>
+						<p>Luglio 2016 - hard fork ethereum per recuperare gli eth rubati</p>
+						<p>Gennaio 2019 - Double spending su ETC tramite "deep reorg"</p>
+						<p>Un anno dopo il delisting di DAO, la SEC ha dichiarato che era in violazione alla legge sulle security US</p>
+					</aside>
+				</section>
+			</section>
+			
+			<section id="sli-blexp">
+				<h3>Analisi delle blockchain</h3>
+			
+				<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; height: 6em;">
+					<a data-nosymbol href="https://blockchair.com"><img src="assets/images/logo-blockchair.png"></a>
+					<a data-nosymbol href="https://blockchain.info"><img src="assets/images/logo-blockchaininfo.png"></a>
+					<a data-nosymbol href="https://blockexplorer.com"><img src="assets/images/logo-blockexplorer.png"></a>
+				</div>
+			
+			</section>
+			
+			<section id="sli-bibli">
+				<h3>Per approfondire</h3>
+				<div style="display: grid; grid-template-columns: 1fr 1fr;">
+					<a style="height: 15em;" data-nosymbol href="https://github.com/bitcoinbook/bitcoinbook"><img src="assets/images/cover-mastering-bitcoin.png"></a> 
+					<a style="height: 15em;" data-nosymbol href="https://blockchain.berkeley.edu/courses"><img src="assets/images/cover-blockchain-at-berkeley.png"></a>
+				</div>
+			</section>
+			
+			<section id="sli-end" data-background="https://media.giphy.com/media/lD76yTC5zxZPG/giphy.gif">
+
+			</section>
+
+			<section>
+				<h2>Grazie!</h2>
+				<a data-nosymbol href="https://t.me/k2lf_blockchain">
+					<img src="assets/images/qr-telegram-k2lf.png">
+					<br/>
+					<i class="ti-telegram-square"></i> https://t.me/k2lf_blockchain
+				</a>
+				<br/>
+				<a data-nosymbol href="https://twitter.com/fadjano"><i class="ti-twitter-square" style="vertical-align: sub;"></i>@fadjano</a>
+				<br/>
+				<a data-nosymbol href="https://www.criptobolla.it">https://www.criptobolla.it</a>
+				<br/>
+				<img style="height:1em;background:none;box-shadow:none" src="./assets/images/logo-clash-royale.png">
+				<img style="height:1em;background:none;box-shadow:none" src="./assets/images/messer-fadjano.png">
+			</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+	<script src="js/tagomi.js"></script>
+	<script src="js/sha256.js"></script>
+	<script type="text/javascript" async
+		src="node_modules/mathjax/latest.js?config=TeX-MML-AM_HTMLorMML"></script>
+	<script type="text/javascript" async
+		src="node_modules/chart.js/dist/Chart.bundle.min.js"></script>
+	<script src="js/flipdown.min.js"></script>
+	<script>
+		new FlipDown(1590393934, 'flipdown-halving', { theme: 'light'}).start();
+	</script>
+</body>
+
+</html>

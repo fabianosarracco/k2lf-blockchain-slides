@@ -1,0 +1,692 @@
+/**
+ * Tagomi theme for reveal.js.
+ *
+ * Copyright (C) 2011-20192 Fabiano Sarracco, fabiano.sarracco@gmail.com
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto|Cabin|Major+Mono+Display|Allura|Titillium+Web:900');
+
+// Include icon fonts
+@import "../template/tagomi-icons";
+
+@font-face{
+    font-family:trajan-sans-pro;
+    src:url("fonts/trajan-sans-pro.woff2") format("woff2"), url("fonts/trajan-sans-pro.woff") format("woff2"), url("fonts/trajan-sans-pro.otf") format("opentype");
+    font-weight:400;
+    font-style:normal;
+}
+@font-face {
+    font-family: 'liberation_serifregular';
+    src: url('fonts/LiberationSerif-Regular-webfont.eot');
+    src: url('fonts/LiberationSerif-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/LiberationSerif-Regular-webfont.woff2') format('woff2'),
+         url('fonts/LiberationSerif-Regular-webfont.woff') format('woff'),
+         url('fonts/LiberationSerif-Regular-webfont.ttf') format('truetype'),
+         url('fonts/LiberationSerif-Regular-webfont.svg#liberation_serifregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'liberation_serifbold';
+    src: url('fonts/LiberationSerif-Bold-webfont.eot');
+    src: url('fonts/LiberationSerif-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/LiberationSerif-Bold-webfont.woff2') format('woff2'),
+         url('fonts/LiberationSerif-Bold-webfont.woff') format('woff'),
+         url('fonts/LiberationSerif-Bold-webfont.ttf') format('truetype'),
+         url('fonts/LiberationSerif-Bold-webfont.svg#liberation_serifbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'liberation_serifbold_italic';
+    src: url('fonts/LiberationSerif-BoldItalic-webfont.eot');
+    src: url('fonts/LiberationSerif-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/LiberationSerif-BoldItalic-webfont.woff2') format('woff2'),
+         url('fonts/LiberationSerif-BoldItalic-webfont.woff') format('woff'),
+         url('fonts/LiberationSerif-BoldItalic-webfont.ttf') format('truetype'),
+         url('fonts/LiberationSerif-BoldItalic-webfont.svg#liberation_serifbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'liberation_serifitalic';
+    src: url('fonts/LiberationSerif-Italic-webfont.eot');
+    src: url('fonts/LiberationSerif-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/LiberationSerif-Italic-webfont.woff2') format('woff2'),
+         url('fonts/LiberationSerif-Italic-webfont.woff') format('woff'),
+         url('fonts/LiberationSerif-Italic-webfont.ttf') format('truetype'),
+         url('fonts/LiberationSerif-Italic-webfont.svg#liberation_serifitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #202030;
+@mixin bodyBackground() {
+	background: $backgroundColor;
+}
+
+$headingTextShadow: 0px 0px 6px rgba(0,0,0,0.2);
+$heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 20px 20px rgba(0,0,0,.15);
+$headingFont: 'Cabin', sans-serif;
+$headingColor: darkorange;
+$headingFontWeight: 900;
+$headingLineHeight: 1.1;
+$heading1Size: 2.5em;
+$heading2Size: 2em;
+$mainFont: 'liberation_serifregular', 'Roboto', sans-serif;
+$mainFontSize: 37px;
+
+$cardHeadersColor: rgb(90, 99, 139);
+$cardContentColor: rgb(240,220,200);
+$cardBorderColor: rgb(200,180,160);
+$cardTextColor: darkslategrey;
+$listItemValueBackground: rgb(200,200,200);
+$listItemValueColor: rgb(20,20,20);
+$listItemValueBorderColor: rgb(185,178,176);
+$listItemContentBackground: rgb(240,220,200);
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+
+.reveal ul {
+    display: block;
+    text-align: left;
+    margin-left: 1em;
+}
+
+.reveal section img {
+    border: none;
+}
+
+.reveal a.external:after {
+    font-family: "tagomi-icons" !important;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 900;
+    font-size: 0.4em;
+    margin-left: 4px;
+    vertical-align: super;
+    margin-top: 6px;
+    content: "\6d";
+    color: cadetblue;
+}
+
+code {
+    color: pink;
+}
+
+span.subpar {
+    display: block;
+    margin-left: 1em;
+}
+
+.twocolumns{
+    display: flex;
+}
+.twocolumns > div {
+    flex: 1;
+}
+// .left {
+//     padding: 1em;
+//     text-align: left;
+// }
+
+// .right {
+//     padding: 1em;
+//     text-align: right; 
+// }
+
+.reveal .slides p {
+    text-align: left;
+}
+
+.reveal .slides section div.overlay-left {
+    position: absolute;
+    width: 40%;
+    background-color: rgba(10, 10, 10, 0.9);
+    top: 2.8em;
+    right: 10px;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 65%;
+    overflow: hidden;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+.reveal .slides section div.overlay-left.collapsed {
+    height: 40px;
+    border-bottom: rgb(200,200,200);
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.reveal .slides section div.overlay-bottom {
+    position: absolute;
+    width: 90%;
+    background-color: rgba(10, 10, 10, 0.8);
+    bottom: 1em;
+    right: 10px;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 65%;
+}
+.reveal .slides section div.title-footer {
+    font-size: 70%;
+    bottom: 1em;
+}
+
+.reveal pre code {
+    max-height: 500px;
+    font-size: 0.9em;
+}
+
+.reveal section h3 {
+    margin-bottom: 30px;
+}
+
+/** Tags **/
+h4.tag {
+    position:absolute;
+    left: 45%; 
+    bottom: 6em;
+    background-color: rgba(80,80,80,0.9); 
+    padding: 15px; 
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    color: lightyellow;
+}
+
+.reveal button.btn {
+    background-color: darkblue;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    border: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.6em;
+    transition: all .2s ease-in-out;
+}
+.reveal button.btn:not(.selected):hover  {
+    background-color: blue;
+    transform: scale(1.1);
+}
+.reveal button.btn.selected {
+    background-color: rgb(236, 219, 124);
+    color: rgb(20,40,180);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    border: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.6em;
+    transition: all .2s ease-in-out;
+    font-weight: bold;
+}
+
+/** Cards **/
+.reveal section .card {
+    background-color: $cardContentColor;
+    border-color: $cardBorderColor;
+    border: 1px;
+    border-radius: 15px;
+    color: $cardTextColor;
+    width: 90%;
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+    text-align: left;
+}
+.reveal section .card.center {
+    text-align: center;
+}
+.reveal section .card.header {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-weight: bold;
+    background-color: rgb(210,190,220);
+    border-bottom: rgb(160,150,160);
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.reveal section .card.footer {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    font-weight: bold;
+    background-color: rgb(210,190,220);
+    border-top: rgb(160,150,160);
+    border-top-width: 5px;
+    border-top-style: solid;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.reveal section .card a {
+    color: rgb(0,30,90)
+}
+.reveal section .card code {
+    color: rgb(0,0,30);
+    font-size: 90%;
+}
+/** Horizontal Cards **/
+.reveal .hcard {
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    align-items: stretch;
+    border: 2px;
+    border-color: lightgoldenrodyellow;
+    margin-top: 10px;
+}
+.reveal .hcard .icon {
+    order: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: $cardHeadersColor;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    font-size: 2.5em;
+    color: lightyellow;
+    z-index: 100;
+}
+.reveal .hcard .content {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: $cardTextColor;
+    background-color: $cardContentColor;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: trajan-sans-pro;
+    width: 100%;
+}
+.reveal section .hcard a {
+    color: rgb(0,30,90)
+}
+.reveal section .hcard.shadowed {
+    box-shadow: 15px 15px 20px black;
+}
+
+/** Vertical Cards **/
+.reveal .vcard {
+    border-radius: 10px;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    max-width: 250px;
+    box-sizing: border-box;
+    margin: 10px 10px 10px 10px;
+}
+.reveal .vcard .header {
+    order: 0;
+    background-color: $cardHeadersColor;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    font-size: 1em;
+    color: lightyellow;
+    z-index: 100;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-family: trajan-sans-pro;
+}
+.reveal .vcard .content {
+    order: 1;
+    width: 250px;
+    height: 250px;
+}
+.reveal .vcard .content img {
+    margin: 0;
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+}
+.reveal .vcard .footer {
+    order: 2;
+    background-color: $cardHeadersColor;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    font-size: 0.7em;
+    color: lightyellow;
+    font-family: trajan-sans-pro;
+    z-index: 100;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    min-height: 70px;
+}
+
+.reveal .quote {
+	font-weight: 100;
+    font-size: 1.8rem;
+    font-style: italic;
+	max-width: 600px;
+	line-height: 1.4;
+	position: relative;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: .5rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    border-top: 1px;
+    border-top-style: solid;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+}
+
+.reveal .quote:before,
+.reveal .quote:after {
+	position: absolute;
+	color: rgb(150,150,170);
+	font-size: 8rem;
+	width: 4rem;
+    height: 4rem;
+    font-style: normal;
+}
+
+.reveal .quote:before {
+	content: '“';
+	left: -1rem;
+	top: -2.5rem;
+}
+
+.reveal .quote:after {
+	content: '”';
+	right: -2rem;
+	bottom: 1rem;
+}
+
+
+
+/** Custom lists. */
+.reveal .list-header {
+    background: rgb(210,200,215);
+    color: black;
+    font-weight: bold;
+    display: block;
+    max-width: 82%;
+    margin: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    font-variant: small-caps;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+.reveal .list-item {
+    display: flex;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+.reveal .list-item .value {
+    font-family: 'Allura', cursive;
+    background-color: $listItemValueBackground;
+    color: $listItemValueColor;
+    border: 1px;
+    border-color: $listItemValueBorderColor;
+    border-style: solid;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    min-width: 1.2em;
+    min-height: 1.2em;
+    max-height: 1.2em;
+    font-size:1em;
+    font-weight: bold;
+    left: 0.2em;
+    position: relative;
+    cursor: pointer;
+    z-index: 50;
+    transition: all .2s ease-in-out;
+    /** Make value unselectable. */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                        supported by Chrome and Opera */
+}
+.reveal .list-item .value:hover {
+    background-color: lightyellow;
+    color: rgb(30,0,30);
+    transform: scale(1.1);
+}
+.reveal .list-item .content {
+    background-color: $listItemContentBackground;
+    border-radius: 15px;
+    padding-top: 10px;
+    /*min-width: 84%;*/
+    /*max-width: 84%;*/
+    text-align: left;
+    padding-left: 1.3em;
+    margin-left: -0.8em;
+    color: rgb(0,30,30);
+    z-index: 0;
+
+    min-width: 92%;
+    max-width: 92%;
+    padding-right: 0.6em;
+    box-sizing: border-box;
+}
+.reveal section .list-item .content a {
+    color: rgb(0,30,90)
+}
+.reveal .list-item.hidden .content {
+    transform: scale(0.0001, 0.0001);
+}
+
+/** Github links */
+.reveal section .github {
+    display: grid;
+    grid-template-columns: 1em 1fr;
+    width: 90%;
+    margin-left: 1em;
+}
+.reveal section .github .icon {
+    order: 1;
+    z-index: 2;
+    font-size: 1.9em;
+    color: #24292E;
+    background-color: #DFDFDF;
+    border: #CFCFCF 1px;
+    border-style: solid;
+    border-radius: 50%;
+    width: 1.1em;
+    height: 1.1em;
+
+    -webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
+}
+.reveal section .github .icon:hover {
+    transform: scale(1.25,1.25);
+    background-color: #EFEFEF;
+    color: #24292E;
+}
+.reveal section .github .icon .ti-github {
+    vertical-align: middle;
+}
+.reveal section .github .content {
+    order: 2;
+    z-index: 1;
+    width: 0;
+    overflow: hidden;
+    background: #DFDFDF;
+    color: #0366d6;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-color: #505050;
+    max-height: 1.2em;
+    margin-top: 0.4em;
+    font-size: 0.8em;
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+    text-align: left;
+
+    -webkit-transition: all 0.6s; /* Safari */
+    transition: all 0.6s;
+}
+.reveal section .github .icon:hover + .content {
+    width: 90%;
+    padding-left: 2em;
+}
+
+
+/** Slides background (image, etc.) */
+.reveal #background-image {
+    position: fixed; 
+    top: -50%; 
+    left: -50%; 
+    width: 200%; 
+    height: 200%;
+    z-index: -1;
+}
+.reveal #background-image img {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    min-width: 50%;
+    min-height: 50%;
+    -webkit-filter: saturate(10%) brightness(0.30);
+    filter: saturate(10%) brightness(0.30);
+}
+.reveal section.slogan {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 3em;
+    display: block;
+    color: black;
+}
+
+@keyframes expand {
+    0% {
+        transform: scale(0.0001, 0.0001);
+        -webkit-transform: scale(0.0001, 0.0001);
+    }
+    50% {
+        transform: scale(1, 0.01);
+        -webkit-transform: scale(1,0.01);
+    }
+    100% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
+.reveal .list-item.hidden.expanding .content {
+    animation: expand 1s ease-in-out;
+    -webkit-animation: expand 1s ease-in-out;
+}
+
+/** Blurred effect */
+.reveal section .blurred {
+    filter: blur(5px);
+}
+
+
+/** reveal-code-focus configuration */
+.reveal section pre code.hljs {
+    background-color: rgb(10,10,10);
+}
+.line { display: block; }
+/*.line.focus { background: yellow; }*/
+/* include a highlight.js theme and modify it */
+/* … */
+/* on focused: switch to solarized light */
+.line.focus { background: rgb(50,40,50);}
+.line.focus .hljs-comment, .line.focus .hljs-quote { color: #93a1a1; }
+// ---------------------------------------------
+/** Fragments animations */
+$animation-in: cubic-bezier(1,0,0,2);
+//$animation-in: linear // To compare with “lazy” animation
+$animation-out: ease-in;
+$app-color: #58d39f;
+//$app-color: #1f90f6 // Alternate
+//$app-color: #eb4751 // Alternate 2
+$timing-in: 600ms;
+$timing-out: 300ms;
+
+.reveal .slides section .fragment.unroll {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateX(-90deg);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform: rotateX(-90deg);
+    transition: all $timing-out #{$animation-out} ($timing-out * 3);
+
+	&.visible {
+		transform: perspective(350px) rotateX(0deg);
+        transition: all $timing-in #{$animation-in};
+	}
+}
+
+/** Animations */
+.textAppearing {
+    -webkit-animation: kfTextAppearing 1s; /* Safari 4.0 - 8.0 */
+    animation: kfTextAppearing 1s;
+  }
+  
+  
+  @keyframes kfTextAppearing {
+      from {transform: translate3d(0px, 100%, 0px);}
+      to {transform: translate3d(0px, 0%, 0px);}
+  }
+
+
+.reveal .slides section .card-details {
+    max-height: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    overflow: hidden;
+    background-color: rgba(200,200,200,0.6);
+    margin-left: 25px;
+    font-size: 80%;
+
+    -webkit-transition: max-height 0.5s, transform 0.5s;
+    transition: max-height 0.5s, transform 0.5s;
+    
+}
+.reveal .slides section .current-fragment .card-details {
+    max-height: 100em;
+    transform: scaleY(1);
+}
+
+.hljs .line {
+    color: rgb(235,235,210);
+}

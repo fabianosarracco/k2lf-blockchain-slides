@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "tagomi-icons";
+  src:url("fonts/tagomi-icons.eot");
+  src:url("fonts/tagomi-icons.eot?#iefix") format("embedded-opentype"),
+    url("fonts/tagomi-icons.woff") format("woff"),
+    url("fonts/tagomi-icons.ttf") format("truetype"),
+    url("fonts/tagomi-icons.svg#tagomi-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "tagomi-icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="ti-"]:before,
+[class*=" ti-"]:before {
+  font-family: "tagomi-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ti-bulb:before {
+  content: "\61";
+}
+.ti-university:before {
+  content: "\62";
+}
+.ti-question-circle:before {
+  content: "\63";
+}
+.ti-question:before {
+  content: "\64";
+}
+.ti-question-circle-empty:before {
+  content: "\65";
+}
+.ti-wikipedia:before {
+  content: "\66";
+}
+.ti-twitter:before {
+  content: "\67";
+}
+.ti-twitter-square:before {
+  content: "\68";
+}
+.ti-linkedin:before {
+  content: "\69";
+}
+.ti-linkedin-square:before {
+  content: "\6a";
+}
+.ti-telegram:before {
+  content: "\6b";
+}
+.ti-telegram-square:before {
+  content: "\6c";
+}
+.ti-external-link:before {
+  content: "\6d";
+}
+.ti-genie-lamp:before {
+  content: "\6e";
+}
+.ti-exclamation-triangle:before {
+  content: "\6f";
+}
+.ti-book-open:before {
+  content: "\70";
+}
+.ti-book-closed:before {
+  content: "\71";
+}
+.ti-law:before {
+  content: "\72";
+}
+.ti-thumb-tack:before {
+  content: "\73";
+}
+.ti-check-mark:before {
+  content: "\74";
+}
+.ti-like:before {
+  content: "\76";
+}
+.ti-check-circle:before {
+  content: "\77";
+}
+.ti-check-square-empty:before {
+  content: "\78";
+}
+.ti-check-square:before {
+  content: "\79";
+}
+.ti-remove:before {
+  content: "\7a";
+}
+.ti-dislike:before {
+  content: "\41";
+}
+.ti-bitcoin:before {
+  content: "\75";
+}
+.ti-bitcoin-circle:before {
+  content: "\42";
+}
+.ti-ethereum:before {
+  content: "\43";
+}
+.ti-ethereum-circle:before {
+  content: "\44";
+}
+.ti-banknote:before {
+  content: "\45";
+}
+.ti-airbnb:before {
+  content: "\46";
+}
+.ti-forklift:before {
+  content: "\47";
+}
+.ti-shopping-cart:before {
+  content: "\48";
+}
+.ti-play-circle:before {
+  content: "\49";
+}
+.ti-shield:before {
+  content: "\4a";
+}
+.ti-aid-medkit-case:before {
+  content: "\4b";
+}
+.ti-github:before {
+  content: "\4c";
+}
+.ti-github-square:before {
+  content: "\4d";
+}

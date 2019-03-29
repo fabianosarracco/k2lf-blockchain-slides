@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="620"
+   height="400"
+   version="1.1"
+   id="svg923"
+   sodipodi:docname="exchange.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata927">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1793"
+     inkscape:window-height="967"
+     id="namedview925"
+     showgrid="false"
+     inkscape:zoom="1.5202796"
+     inkscape:cx="297.71464"
+     inkscape:cy="212.44382"
+     inkscape:window-x="26"
+     inkscape:window-y="26"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg923" />
+  <defs
+     id="defs879">
+    <filter
+       id="shadow"
+       x="0"
+       y="0"
+       width="200%"
+       height="200%">
+      <feOffset
+         result="offOut"
+         in="SourceAlpha"
+         dx="7"
+         dy="7"
+         id="feOffset872" />
+      <feGaussianBlur
+         result="blurOut"
+         in="offOut"
+         stdDeviation="5"
+         id="feGaussianBlur874" />
+      <feBlend
+         in="SourceGraphic"
+         in2="blurOut"
+         mode="normal"
+         id="feBlend876" />
+    </filter>
+  </defs>
+  <line
+     style="fill:none;stroke:#000000;stroke-width:2"
+     id="line899"
+     stroke-opacity="null"
+     fill-opacity="null"
+     x1="333.1279"
+     y1="64.534882"
+     x2="277.12793"
+     y2="101.53488"
+     stroke-linejoin="null"
+     stroke-linecap="null" />
+  <line
+     style="fill:none;stroke:#000000;stroke-width:2"
+     id="line905"
+     stroke-opacity="null"
+     fill-opacity="null"
+     x1="360.1279"
+     y1="64.534882"
+     x2="431.1279"
+     y2="102.53488"
+     stroke-linejoin="null"
+     stroke-linecap="null" />
+  <line
+     style="fill:none;stroke:#000000;stroke-width:2.6700685"
+     id="line899-6"
+     stroke-opacity="null"
+     fill-opacity="null"
+     x1="253.19167"
+     y1="162.75272"
+     x2="182.45049"
+     y2="214.95653"
+     stroke-linejoin="null"
+     stroke-linecap="null" />
+  <line
+     style="fill:none;stroke:#000000;stroke-width:2.6700685"
+     id="line899-6-0"
+     stroke-opacity="null"
+     fill-opacity="null"
+     x1="157.4856"
+     y1="275.8898"
+     x2="86.744415"
+     y2="328.09363"
+     stroke-linejoin="null"
+     stroke-linecap="null" />
+  <line
+     style="fill:none;stroke:#000000;stroke-width:2.12298512"
+     id="line905-1"
+     stroke-opacity="null"
+     fill-opacity="null"
+     x1="292.53644"
+     y1="162.68661"
+     x2="364.11774"
+     y2="205.15602"
+     stroke-linejoin="null"
+     stroke-linecap="null" />
+  <line
+     style="fill:none;stroke:#000000;stroke-width:2.05256701"
+     id="line905-2"
+     stroke-opacity="null"
+     fill-opacity="null"
+     x1="197.83287"
+     y1="275.85385"
+     x2="253.59586"
+     y2="326.814"
+     stroke-linejoin="null"
+     stroke-linecap="null" />
+  <g
+     id="g4649"
+     transform="translate(35.288867,-2.4074419e-6)">
+    <rect
+       height="62"
+       width="132"
+       y="2.034884"
+       x="247.62791"
+       rx="10"
+       ry="10"
+       id="rect891"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.5;filter:url(#shadow)" />
+    <text
+       xml:space="preserve"
+       font-size="24"
+       y="39.534885"
+       x="264.6279"
+       id="text893"
+       style="font-size:24px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;fill:#000000;stroke:#000000;stroke-width:0">Exchange</text>
+  </g>
+  <g
+     id="g4690"
+     transform="translate(-122.57683,226.27417)">
+    <rect
+       height="62"
+       width="101"
+       y="101.03488"
+       x="163.12791"
+       rx="10"
+       ry="10"
+       fill-opacity="null"
+       stroke-opacity="null"
+       id="rect895"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.5;filter:url(#shadow)" />
+    <text
+       xml:space="preserve"
+       font-size="24"
+       y="141.03488"
+       x="193.12791"
+       fill-opacity="null"
+       stroke-opacity="null"
+       id="text897"
+       style="font-size:24px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;fill:#000000;stroke:#000000;stroke-width:0">Fiat</text>
+  </g>
+  <g
+     id="g4694"
+     transform="translate(-157.43884,224.30085)">
+    <rect
+       height="62"
+       width="113"
+       y="103.03488"
+       x="352.1279"
+       rx="10"
+       ry="10"
+       fill-opacity="null"
+       stroke-opacity="null"
+       id="rect901"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.5;filter:url(#shadow)" />
+    <text
+       xml:space="preserve"
+       font-size="24"
+       y="141.03488"
+       x="372.1279"
+       fill-opacity="null"
+       stroke-opacity="null"
+       id="text903"
+       style="font-size:24px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;fill:#000000;stroke:#000000;stroke-width:0">Crypto</text>
+  </g>
+  <g
+     id="g4736"
+     transform="translate(46.471022,66.435148)">
+    <rect
+       height="62"
+       width="157"
+       y="147.96605"
+       x="49.802795"
+       rx="10"
+       ry="10"
+       fill-opacity="null"
+       stroke-opacity="null"
+       id="rect907"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.5;filter:url(#shadow)" />
+    <text
+       style="font-size:24px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;fill:#000000;stroke:#000000;stroke-width:0"
+       xml:space="preserve"
+       font-size="24"
+       y="185.1505"
+       x="63.995449"
+       fill-opacity="null"
+       stroke-opacity="null"
+       id="text909">Centralizzati</text>
+  </g>
+  <g
+     id="g4741"
+     transform="translate(-121.91906,-23.679855)">
+    <rect
+       height="93"
+       width="177"
+       y="230.03488"
+       x="403.1279"
+       rx="10"
+       ry="10"
+       fill-opacity="null"
+       stroke-opacity="null"
+       id="rect913"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.5;filter:url(#shadow)" />
+    <text
+       xml:space="preserve"
+       font-size="24"
+       y="270.03488"
+       x="413.1279"
+       fill-opacity="null"
+       stroke-opacity="null"
+       id="text915"
+       style="font-size:24px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;fill:#000000;stroke:#000000;stroke-width:0">Decentralizzati</text>
+    <text
+       xml:space="preserve"
+       font-size="24"
+       y="300.03488"
+       x="457.1279"
+       fill-opacity="null"
+       stroke-opacity="null"
+       id="text917"
+       style="font-size:24px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;fill:#000000;stroke:#000000;stroke-width:0">(DEX)</text>
+  </g>
+  <g
+     id="g4649-2"
+     transform="translate(-25.318776,-22.521577)">
+    <g
+       id="g4686"
+       transform="translate(-18.417665,120.3726)">
+      <rect
+         style="fill:#ffffff;stroke:#000000;stroke-width:1.5;filter:url(#shadow)"
+         id="rect891-0"
+         ry="10"
+         rx="10"
+         x="249.60124"
+         y="2.6926577"
+         width="132"
+         height="62" />
+      <text
+         style="font-size:24px;font-family:Helvetica, Arial, sans-serif;text-anchor:start;fill:#000000;stroke:#000000;stroke-width:0"
+         id="text893-9"
+         x="277.78339"
+         y="41.508205"
+         font-size="24"
+         xml:space="preserve">Online</text>
+    </g>
+  </g>
+  <g
+     id="g4649-2-0"
+     transform="translate(154.91122,-20.54826)">
+    <g
+       id="g4686-7"
+       transform="translate(-18.417665,120.3726)">
+      <rect
+         style="fill:#ffffff;stroke:#000000;stroke-width:1.5;filter:url(#shadow)"
+         id="rect891-0-7"
+         ry="10"
+         rx="10"
+         x="249.60124"
+         y="2.6926577"
+         width="132"
+         height="62" />
+      <text
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:Helvetica, Arial, sans-serif;-inkscape-font-specification:'Helvetica, Arial, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:#000000;stroke-width:0"
+         id="text893-9-5"
+         x="287.64999"
+         y="40.192657"
+         font-size="24"
+         xml:space="preserve"><tspan
+           sodipodi:role="line"
+           id="tspan4732"
+           x="287.64999"
+           y="40.192657">Fisici</tspan></text>
+    </g>
+  </g>
+</svg>
